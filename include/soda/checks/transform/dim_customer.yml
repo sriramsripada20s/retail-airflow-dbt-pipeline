@@ -1,0 +1,22 @@
+# Define data quality checks for the dim_customer dimension table
+checks for dim_customer:
+  
+  # 1. Schema Validation: Ensure the table structure exactly matches expectations
+  - schema:
+      fail:
+        # Fails the pipeline if any of these critical columns are dropped or renamed
+        when required column missing: [CUSTOMER_KEY, CUSTOMER_ID, COUNTRY]
+        
+        # Fails the pipeline if the data types change (prevents downstream casting errors)
+        when wrong column type:
+          CUSTOMER_KEY: text
+          CUSTOMER_ID: number
+          COUNTRY: text
+          
+  # 2. Uniqueness Check: Validates the Primary Key to prevent duplicate customer records
+  - duplicate_count(CUSTOMER_KEY) = 0:
+      name: All customer keys are unique
+      
+  # 3. Completeness Check: Ensures no customer record was inserted with a NULL Primary Key
+  - missing_count(CUSTOMER_KEY) = 0:
+      name: All customers have a key

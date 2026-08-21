@@ -1,0 +1,27 @@
+# Define Soda data quality checks for the dim_product dimension table
+checks for dim_product:
+
+  # 1. Schema Validation: Guarantees essential columns exist with expected data types
+  - schema:
+      fail:
+        # Fails the run if any required dimension column is dropped or renamed
+        when required column missing: [PRODUCT_KEY, STOCK_CODE, DESCRIPTION, PRICE]
+        
+        # Fails the run if a column type shifts (e.g., PRICE changes from float to string)
+        when wrong column type:
+          PRODUCT_KEY: text
+          STOCK_CODE: text
+          DESCRIPTION: text
+          PRICE: float
+
+  # 2. Uniqueness Check: Ensures the Primary Key contains no duplicate product entries
+  - duplicate_count(PRODUCT_KEY) = 0:
+      name: All products are unique
+
+  # 3. Completeness Check: Ensures no product record was inserted with a NULL Primary Key
+  - missing_count(PRODUCT_KEY) = 0:
+      name: All products have a key
+
+  # 4. Metric / Value Range Check: Prevents bad financial data by verifying unit price is never negative
+  - min(PRICE):
+      fail: when < 0

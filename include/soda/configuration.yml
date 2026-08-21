@@ -8,3 +8,14 @@ data_source retail:
     schema: RAW
     warehouse: RETAIL_WH
     role: AIRFLOW_RETAIL_ROLE
+
+data_source retail_transform:
+  type: snowflake
+  connection:
+    username: AIRFLOW_RETAIL_USER
+    password: ${SNOWFLAKE_RETAIL_PASSWORD}
+    account: SZYWYMF-CE91608
+    database: RETAIL
+    schema: TRANSFORM
+    warehouse: RETAIL_WH
+    role: AIRFLOW_RETAIL_ROLE

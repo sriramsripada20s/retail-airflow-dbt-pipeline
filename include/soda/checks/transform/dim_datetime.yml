@@ -1,0 +1,30 @@
+# Define data quality checks for the dim_datetime dimension table
+checks for dim_datetime:
+  
+  # 1. Schema Validation: Guarantees column presence and data types
+  - schema:
+      fail:
+        # Fails the pipeline if any required column is missing from the table
+        when required column missing: [DATETIME_ID, DATETIME, YEAR, MONTH, DAY, WEEKDAY]
+        
+        # Fails if column data types deviate from expected data types
+        when wrong column type:
+          DATETIME_ID: timestamp_ntz
+          YEAR: number
+          MONTH: number
+          DAY: number
+          WEEKDAY: number
+
+  # 2. Uniqueness Check: Ensures the Primary Key contains no duplicate records
+  - duplicate_count(DATETIME_ID) = 0:
+      name: All datetimes are unique
+
+  # 3. Completeness Check: Ensures no datetime record has a NULL Primary Key
+  - missing_count(DATETIME_ID) = 0:
+      name: All datetimes have a key
+
+  # 4. Domain / Value Range Check: Validates that day-of-week values fall strictly between 0 (Sunday) and 6 (Saturday)
+  - invalid_count(WEEKDAY) = 0:
+      name: All weekdays are in range 0-6
+      valid min: 0
+      valid max: 6
