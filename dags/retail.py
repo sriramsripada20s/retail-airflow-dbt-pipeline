@@ -11,6 +11,7 @@ import logging
 from airflow.sdk import dag, TaskGroup
 from airflow.providers.common.sql.operators.sql import SQLExecuteQueryOperator
 from pendulum import datetime
+from include.alerts import task_failure_slack_alert, dag_failure_slack_alert
 
 # Astronomer Cosmos imports for running dbt models inside Airflow
 from cosmos.airflow.task_group import DbtTaskGroup
@@ -34,10 +35,14 @@ from include.soda_tasks import check_load, check_transform
 # Define the Airflow DAG metadata and configuration
 @dag(
     start_date=datetime(2026, 1, 1),
-    schedule=None,  # Manual trigger only
-    catchup=False,   # Disable backfilling
+    schedule=None,
+    catchup=False,
     tags=["retail"],
-    template_searchpath=["/usr/local/airflow/include/sql"],  # Folder containing external .sql files
+    template_searchpath=["/usr/local/airflow/include/sql"],
+    default_args={
+        "on_failure_callback": task_failure_slack_alert, #applied to every task in the DAG automatically
+    },
+    on_failure_callback=dag_failure_slack_alert,  # optional: one summary alert per failed run
 )
 def retail():
 

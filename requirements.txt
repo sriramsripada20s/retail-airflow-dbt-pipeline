@@ -3,3 +3,4 @@ apache-airflow-providers-snowflake
 astronomer-cosmos[dbt-snowflake]
 protobuf>=4.21
 soda-core-snowflake
+apache-airflow-providers-slack
