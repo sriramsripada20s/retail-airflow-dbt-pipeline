@@ -1,0 +1,6 @@
+checks for report_product_invoices:
+  - missing_count(STOCK_CODE) = 0:
+      name: All product report rows have a stock code
+  - min(TOTAL_QUANTITY_SOLD):
+      fail: when <= 0
+      name: All products have a positive quantity sold

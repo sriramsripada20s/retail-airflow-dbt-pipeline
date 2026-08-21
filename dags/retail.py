@@ -14,6 +14,7 @@ from pendulum import datetime
 
 # Astronomer Cosmos imports for running dbt models inside Airflow
 from cosmos.airflow.task_group import DbtTaskGroup
+from include.soda_tasks import check_load, check_transform, check_report
 from cosmos.config import RenderConfig
 from cosmos.constants import LoadMode
 from include.dbt.cosmos_config import DBT_PROJECT_CONFIG, DBT_CONFIG
@@ -107,12 +108,15 @@ def retail():
     with TaskGroup(group_id="quality_transform") as quality_transform:
         # Run Soda checks on silver/gold transformation models (dim_*, fct_*)
         check_transform()
+    
+    with TaskGroup(group_id="quality_report") as quality_report:
+        check_report()
 
     # =========================================================================
     # PIPELINE FLOW DEPENDENCIES
     # =========================================================================
     # Sequence: Ingest -> Raw Quality Gate -> dbt Transformations -> Transform Quality Gate
-    ingest >> quality_raw >> transform >> quality_transform
+    ingest >> quality_raw >> transform >> quality_transform >> quality_report
 
 
 # Register DAG with Airflow runtime

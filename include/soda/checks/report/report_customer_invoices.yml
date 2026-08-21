@@ -1,0 +1,9 @@
+checks for report_customer_invoices:
+  - missing_count(COUNTRY) = 0:
+      name: All customer report rows have a country
+  - min(TOTAL_INVOICES):
+      fail: when <= 0
+      name: All countries have a positive invoice count
+  - min(TOTAL_REVENUE):
+      fail: when <= 0
+      name: All countries have positive total revenue

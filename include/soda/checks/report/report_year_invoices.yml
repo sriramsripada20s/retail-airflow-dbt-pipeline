@@ -1,0 +1,6 @@
+checks for report_year_invoices:
+  - min(NUM_INVOICES):
+      fail: when < 0
+      name: Invoice counts by month are never negative
+  - row_count > 0:
+      name: At least one year/month period is present
