@@ -1,10 +1,10 @@
 # Define Soda data quality checks for the fct_invoices fact table
 checks for fct_invoices:
 
-  # 1. Schema Validation: Ensures core fact attributes and foreign keys are present with correct types
+  # 1. Schema Validation: Ensures core fact attributes, measures, and dimension keys are present with correct types
   - schema:
       fail:
-        # Fails if primary identifiers, dimension keys, or numerical measures are missing
+        # Fails if primary identifiers, foreign keys, or numerical measures are missing
         when required column missing:
           [INVOICE_NO, DATETIME_ID, PRODUCT_KEY, CUSTOMER_KEY, QUANTITY, TOTAL]
         
@@ -29,6 +29,6 @@ checks for fct_invoices:
         FROM fct_invoices
         WHERE TOTAL < 0
 
-  # 4. Volume / Anomaly Check: Verifies the pipeline didn't experience massive data loss after transformations/filtering
-  - row_count > 400000:
-      name: Fact table has a reasonable row count after filtering
+  # 4. Volume / Anomaly Check: Verifies dataset size remains above 500,000 records (accounting for unassigned/guest customer lines)
+  - row_count > 500000:
+      name: Fact table has a reasonable row count after filtering (includes anonymous purchases)

@@ -1,7 +1,7 @@
 -- dim_datetime.sql
 with dates as (
     select distinct invoice_datetime
-    from {{ ref('int_retail__invoice_lines') }}
+    from {{ ref('stg_retail__invoices') }}
     where invoice_datetime is not null
 )
 

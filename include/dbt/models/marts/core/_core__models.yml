@@ -2,7 +2,9 @@ version: 2
 
 models:
   - name: dim_customer
-    description: One row per unique (customer_id, country) combination.
+    description: >
+      One row per unique (customer_id, country) combination, plus a '-1'
+      sentinel row representing anonymous/guest purchases with no CustomerID.
     columns:
       - name: customer_key
         tests:
@@ -26,7 +28,10 @@ models:
           - not_null
 
   - name: fct_invoices
-    description: One row per invoice line item, joined to all three dimensions.
+    description: >
+      One row per invoice line item, joined to all three dimensions.
+      customer_key is never null — anonymous purchases map to dim_customer's
+      '-1' sentinel row rather than being dropped from the fact table.
     columns:
       - name: customer_key
         tests:

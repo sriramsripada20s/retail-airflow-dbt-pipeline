@@ -93,7 +93,12 @@ def retail():
         group_id="transform",
         project_config=DBT_PROJECT_CONFIG,
         profile_config=DBT_CONFIG,
-        render_config=RenderConfig(load_method=LoadMode.DBT_LS, select=["path:models"]),
+        render_config=RenderConfig(
+            load_method=LoadMode.DBT_LS,
+            select=["path:models"],
+            dbt_deps=False,
+        ),
+        operator_args={"install_deps": False},
     )
 
     # =========================================================================
