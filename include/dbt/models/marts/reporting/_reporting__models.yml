@@ -1,0 +1,35 @@
+version: 2
+
+models:
+  - name: report_customer_invoices
+    description: Invoice count and total revenue aggregated by customer country.
+    columns:
+      - name: country
+        tests:
+          - not_null
+      - name: total_invoices
+        tests:
+          - not_null
+      - name: total_revenue
+        tests:
+          - not_null
+
+  - name: report_product_invoices
+    description: Total quantity sold per product.
+    columns:
+      - name: stock_code
+        tests:
+          - not_null
+      - name: total_quantity_sold
+        tests:
+          - not_null
+
+  - name: report_year_invoices
+    description: Invoice count and total revenue aggregated by year and month.
+    columns:
+      - name: year
+        tests:
+          - not_null
+      - name: num_invoices
+        tests:
+          - not_null
