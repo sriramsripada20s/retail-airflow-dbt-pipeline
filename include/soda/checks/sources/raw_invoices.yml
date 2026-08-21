@@ -1,0 +1,14 @@
+checks for raw_invoices:
+  - schema:
+      fail:
+        when required column missing: [INVOICENO, STOCKCODE, QUANTITY, INVOICEDATE, UNITPRICE, CUSTOMERID, COUNTRY]
+        when wrong column type:
+          INVOICENO: text
+          STOCKCODE: text
+          QUANTITY: number
+          INVOICEDATE: text
+          UNITPRICE: float
+          CUSTOMERID: float
+          COUNTRY: text
+  - row_count > 500000:
+      name: Row count is close to expected 541909

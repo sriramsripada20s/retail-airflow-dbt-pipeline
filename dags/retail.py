@@ -160,13 +160,19 @@ def retail():
                 "or a changed source file.", table_count, expected
             )
 
+    @task.external_python(python="/usr/local/airflow/soda_venv/bin/python")
+    def check_load(scan_name="check_load", checks_subpath="sources"):
+        from include.soda.check_function import check
+        return check(scan_name, checks_subpath)
+
     # Instantiate task instances
     upload = upload_csv_to_stage()
     stage_check = check_stage_row_count()
     verify = verify_table_row_count()
+    check = check_load()
 
     # Define DAG execution dependencies (linear pipeline workflow)
-    upload >> stage_check >> create_raw_table >> truncate_raw_table >> copy_into_raw >> verify
+    upload >> stage_check >> create_raw_table >> truncate_raw_table >> copy_into_raw >> verify >> check
 
 
 # Register DAG with Airflow runtime

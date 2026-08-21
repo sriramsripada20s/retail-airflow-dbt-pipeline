@@ -1,0 +1,10 @@
+data_source retail:
+  type: snowflake
+  connection:
+    username: AIRFLOW_RETAIL_USER
+    password: ${SNOWFLAKE_RETAIL_PASSWORD}
+    account: SZYWYMF-CE91608
+    database: RETAIL
+    schema: RAW
+    warehouse: RETAIL_WH
+    role: AIRFLOW_RETAIL_ROLE
