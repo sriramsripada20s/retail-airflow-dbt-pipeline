@@ -842,3 +842,1072 @@ having count(*) > 1
 [0m01:48:27.638101 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dab7a28ad50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dab7876d180>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dab7876cd60>]}
 [0m01:48:27.639555 [debug] [MainThread]: Flushing usage events
 [0m01:48:27.826512 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m01:55:57.355224 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b6508a85fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b650a94dbd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b650741f9d0>]}
+
+
+============================== 01:55:57.391258 | 0ea193a3-f577-4f82-ae5f-fd02f05f7969 ==============================
+[0m01:55:57.391258 [info ] [MainThread]: Running with dbt=1.12.2
+[0m01:55:57.393156 [debug] [MainThread]: running dbt with arguments {'profiles_dir': '/usr/local/airflow/include/dbt', 'static_parser': 'True', 'log_cache_events': 'False', 'fail_fast': 'False', 'hints_enabled': 'True', 'version_check': 'True', 'introspect': 'True', 'no_print': 'None', 'debug': 'False', 'printer_width': '80', 'send_anonymous_usage_stats': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_colors': 'True', 'log_format': 'default', 'write_json': 'True', 'empty': 'None', 'use_experimental_parser': 'False', 'invocation_command': 'dbt deps', 'partial_parse': 'True', 'target_path': 'None', 'log_path': '/usr/local/airflow/include/dbt/logs', 'warn_error': 'None', 'cache_selected_only': 'False', 'indirect_selection': 'eager', 'quiet': 'False', 'maximum_seed_size_mib': '1'}
+[0m01:55:58.030764 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0ea193a3-f577-4f82-ae5f-fd02f05f7969', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b65069d2b10>]}
+[0m01:55:59.428481 [debug] [MainThread]: Set downloads directory='/tmp/dbt-downloads-tra6t2jv'
+[0m01:55:59.430103 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m01:55:59.936030 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m01:55:59.940413 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m01:56:00.051437 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m01:56:00.059619 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m01:56:12.409756 [info ] [MainThread]: Installed from version 1.1.1
+[0m01:56:12.411749 [info ] [MainThread]: Updated version available: 1.4.1
+[0m01:56:12.417692 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '0ea193a3-f577-4f82-ae5f-fd02f05f7969', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b6509eb4f30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b650746fbd0>]}
+[0m01:56:12.420679 [info ] [MainThread]: 
+[0m01:56:12.423535 [info ] [MainThread]: Updates available for packages: ['dbt-labs/dbt_utils']                 
+Update your versions in packages.yml, then run dbt deps
+[0m01:56:12.433304 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 15.263497, "process_in_blocks": "2", "process_kernel_time": 10.604714, "process_mem_max_rss": "151832", "process_out_blocks": "200", "process_user_time": 7.184115}
+[0m01:56:12.436375 [debug] [MainThread]: Command `dbt deps` succeeded at 01:56:12.435903 after 15.27 seconds
+[0m01:56:12.438821 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b6506fd5c50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b650751ae40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b650751ad50>]}
+[0m01:56:12.440777 [debug] [MainThread]: Flushing usage events
+[0m01:56:12.612084 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m01:56:32.143505 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7555160b9fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x755517f7dbd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x755514ac79d0>]}
+
+
+============================== 01:56:32.162383 | dc6fec4f-14cc-4891-ad27-6321fdaa8fc9 ==============================
+[0m01:56:32.162383 [info ] [MainThread]: Running with dbt=1.12.2
+[0m01:56:32.166075 [debug] [MainThread]: running dbt with arguments {'empty': 'False', 'fail_fast': 'False', 'introspect': 'True', 'quiet': 'False', 'indirect_selection': 'eager', 'log_format': 'default', 'cache_selected_only': 'False', 'version_check': 'True', 'send_anonymous_usage_stats': 'True', 'target_path': 'None', 'log_path': '/usr/local/airflow/include/dbt/logs', 'invocation_command': 'dbt run --select intermediate --profiles-dir /usr/local/airflow/include/dbt/', 'hints_enabled': 'True', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True', 'maximum_seed_size_mib': '1', 'warn_error': 'None', 'partial_parse': 'True', 'use_experimental_parser': 'False', 'static_parser': 'True', 'printer_width': '80', 'debug': 'False', 'use_colors': 'True', 'log_cache_events': 'False', 'profiles_dir': '/usr/local/airflow/include/dbt/'}
+[0m01:56:41.343685 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m01:56:41.347070 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m01:56:41.349625 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m01:56:42.396133 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'dc6fec4f-14cc-4891-ad27-6321fdaa8fc9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7554ef98f6f0>]}
+[0m01:56:42.556957 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'dc6fec4f-14cc-4891-ad27-6321fdaa8fc9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7554ef9d39b0>]}
+[0m01:56:42.561111 [info ] [MainThread]: Registered adapter: snowflake=1.10.5
+[0m01:56:43.022769 [debug] [MainThread]: checksum: cc35750ecde71b865d75821767eaac2efd404a8abed9e099166986ed39d3d5d9, vars: {}, profile: retail, target: dev, version: 1.12.2
+[0m01:56:45.134987 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 7 files changed.
+[0m01:56:45.136401 [debug] [MainThread]: Partial parsing: updated file: retail://models/marts/core/_core__models.yml
+[0m01:56:45.137674 [debug] [MainThread]: Partial parsing: updated file: retail://models/intermediate/retail/_int_retail__models.yml
+[0m01:56:45.138968 [debug] [MainThread]: Partial parsing: updated file: retail://models/marts/core/fct_invoices.sql
+[0m01:56:45.140201 [debug] [MainThread]: Partial parsing: updated file: retail://models/marts/core/dim_customer.sql
+[0m01:56:45.141220 [debug] [MainThread]: Partial parsing: updated file: retail://models/marts/core/dim_product.sql
+[0m01:56:45.142259 [debug] [MainThread]: Partial parsing: updated file: retail://models/intermediate/retail/int_retail__invoice_lines.sql
+[0m01:56:45.143374 [debug] [MainThread]: Partial parsing: updated file: retail://models/marts/core/dim_datetime.sql
+[0m01:56:46.110314 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'dc6fec4f-14cc-4891-ad27-6321fdaa8fc9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7554ef3c6b50>]}
+[0m01:56:46.297383 [debug] [MainThread]: Wrote artifact WritableManifest to /usr/local/airflow/include/dbt/target/manifest.json
+[0m01:56:46.308428 [debug] [MainThread]: Wrote artifact SemanticManifest to /usr/local/airflow/include/dbt/target/semantic_manifest.json
+[0m01:56:46.381997 [debug] [MainThread]: Wrote artifact OsiDocument to /usr/local/airflow/include/dbt/target/osi_document.json
+[0m01:56:46.462416 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'dc6fec4f-14cc-4891-ad27-6321fdaa8fc9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7554ede16e40>]}
+[0m01:56:46.464579 [info ] [MainThread]: Found 7 models, 23 data tests, 2 sources, 634 macros
+[0m01:56:46.466838 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'dc6fec4f-14cc-4891-ad27-6321fdaa8fc9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7554edef50f0>]}
+[0m01:56:46.474053 [info ] [MainThread]: 
+[0m01:56:46.476435 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m01:56:46.478907 [info ] [MainThread]: 
+[0m01:56:46.481727 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m01:56:46.485986 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_RETAIL'
+[0m01:56:47.081139 [debug] [ThreadPool]: Using snowflake connection "list_RETAIL"
+[0m01:56:47.082824 [debug] [ThreadPool]: On list_RETAIL: show terse schemas in database RETAIL
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "retail", "target_name": "dev", "connection_name": "list_RETAIL"} */
+[0m01:56:47.084157 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m01:56:49.873515 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 2.688 seconds
+[0m01:56:49.889734 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_RETAIL, now list_RETAIL_TRANSFORM)
+[0m01:56:49.904614 [debug] [ThreadPool]: Using snowflake connection "list_RETAIL_TRANSFORM"
+[0m01:56:49.906350 [debug] [ThreadPool]: On list_RETAIL_TRANSFORM: show objects in RETAIL.TRANSFORM
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "retail", "target_name": "dev", "connection_name": "list_RETAIL_TRANSFORM"} */;
+[0m01:56:50.425635 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.518 seconds
+[0m01:56:50.435833 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'dc6fec4f-14cc-4891-ad27-6321fdaa8fc9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7554ecfd1d90>]}
+[0m01:56:50.463158 [debug] [Thread-1 (]: Began running node model.retail.int_retail__invoice_lines
+[0m01:56:50.464999 [info ] [Thread-1 (]: 1 of 1 START sql view model TRANSFORM.int_retail__invoice_lines ................ [RUN]
+[0m01:56:50.466735 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_RETAIL_TRANSFORM, now model.retail.int_retail__invoice_lines)
+[0m01:56:50.468508 [debug] [Thread-1 (]: Began compiling node model.retail.int_retail__invoice_lines
+[0m01:56:50.476212 [debug] [Thread-1 (]: Writing injected SQL for node "model.retail.int_retail__invoice_lines"
+[0m01:56:50.540152 [debug] [Thread-1 (]: Began executing node model.retail.int_retail__invoice_lines
+[0m01:56:50.753433 [debug] [Thread-1 (]: Writing runtime sql for node "model.retail.int_retail__invoice_lines"
+[0m01:56:50.824665 [debug] [Thread-1 (]: Using snowflake connection "model.retail.int_retail__invoice_lines"
+[0m01:56:50.826322 [debug] [Thread-1 (]: On model.retail.int_retail__invoice_lines: create or replace   view RETAIL.TRANSFORM.int_retail__invoice_lines
+  
+  
+  
+  
+  as (
+    -- int_retail__invoice_lines.sql
+-- Computes line-level totals and filters to valid, sellable rows.
+-- This is where "what counts as a real sale" logic lives, kept separate
+-- from both the raw staging pass-through and the dimensional marts.
+
+with invoices as (
+    select * from RETAIL.TRANSFORM.stg_retail__invoices
+),
+
+priced as (
+    select
+        *,
+        quantity * unit_price as line_total
+    from invoices
+    where quantity > 0        -- excludes returns/cancellations (negative quantity)
+      and unit_price > 0      -- excludes free-item / data-entry-error rows
+      and stock_code is not null
+)
+
+select * from priced
+  )
+/* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "retail", "target_name": "dev", "node_id": "model.retail.int_retail__invoice_lines"} */;
+[0m01:56:51.477365 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.649 seconds
+[0m01:56:51.502834 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dc6fec4f-14cc-4891-ad27-6321fdaa8fc9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7554ecffb1d0>]}
+[0m01:56:51.505567 [info ] [Thread-1 (]: 1 of 1 OK created sql view model TRANSFORM.int_retail__invoice_lines ........... [[32mSUCCESS 1[0m in 1.03s]
+[0m01:56:51.508301 [debug] [Thread-1 (]: Finished running node model.retail.int_retail__invoice_lines
+[0m01:56:51.516609 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m01:56:51.517883 [debug] [MainThread]: Connection 'model.retail.int_retail__invoice_lines' was left open.
+[0m01:56:51.519105 [debug] [MainThread]: On model.retail.int_retail__invoice_lines: Close
+[0m01:56:51.973720 [info ] [MainThread]: 
+[0m01:56:51.975301 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 5.49 seconds (5.49s).
+[0m01:56:51.978860 [debug] [MainThread]: Command end result
+[0m01:56:52.079224 [debug] [MainThread]: Wrote artifact WritableManifest to /usr/local/airflow/include/dbt/target/manifest.json
+[0m01:56:52.093224 [debug] [MainThread]: Wrote artifact SemanticManifest to /usr/local/airflow/include/dbt/target/semantic_manifest.json
+[0m01:56:52.104610 [debug] [MainThread]: Wrote artifact OsiDocument to /usr/local/airflow/include/dbt/target/osi_document.json
+[0m01:56:52.131163 [debug] [MainThread]: Wrote artifact RunExecutionResult to /usr/local/airflow/include/dbt/target/run_results.json
+[0m01:56:52.132532 [info ] [MainThread]: 
+[0m01:56:52.134169 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m01:56:52.135861 [info ] [MainThread]: 
+[0m01:56:52.137747 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=1
+[0m01:56:52.140229 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 20.077892, "process_in_blocks": "3111", "process_kernel_time": 7.838872, "process_mem_max_rss": "283408", "process_out_blocks": "24", "process_user_time": 15.677744}
+[0m01:56:52.142352 [debug] [MainThread]: Command `dbt run` succeeded at 01:56:52.142158 after 20.08 seconds
+[0m01:56:52.143881 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7554ece74e10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7554ef078730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7554ef079090>]}
+[0m01:56:52.145329 [debug] [MainThread]: Flushing usage events
+[0m01:56:52.284298 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m01:57:04.028664 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c90d910dfd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c90dafb5bd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c90d79d79d0>]}
+
+
+============================== 01:57:04.034660 | 8fc6a75d-433b-4057-b20e-191d93f347de ==============================
+[0m01:57:04.034660 [info ] [MainThread]: Running with dbt=1.12.2
+[0m01:57:04.036791 [debug] [MainThread]: running dbt with arguments {'log_cache_events': 'False', 'no_print': 'None', 'profiles_dir': '/usr/local/airflow/include/dbt/', 'printer_width': '80', 'maximum_seed_size_mib': '1', 'log_path': '/usr/local/airflow/include/dbt/logs', 'quiet': 'False', 'warn_error': 'None', 'cache_selected_only': 'False', 'use_colors': 'True', 'empty': 'None', 'use_experimental_parser': 'False', 'fail_fast': 'False', 'send_anonymous_usage_stats': 'True', 'target_path': 'None', 'write_json': 'True', 'version_check': 'True', 'static_parser': 'True', 'indirect_selection': 'eager', 'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt test --select intermediate --profiles-dir /usr/local/airflow/include/dbt/', 'introspect': 'True', 'log_format': 'default', 'debug': 'False', 'hints_enabled': 'True'}
+[0m01:57:05.707735 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m01:57:05.710402 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m01:57:05.712980 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m01:57:06.279719 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '8fc6a75d-433b-4057-b20e-191d93f347de', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c90b2a9b6f0>]}
+[0m01:57:06.409297 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '8fc6a75d-433b-4057-b20e-191d93f347de', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c90b290b9b0>]}
+[0m01:57:06.412106 [info ] [MainThread]: Registered adapter: snowflake=1.10.5
+[0m01:57:06.585865 [debug] [MainThread]: checksum: cc35750ecde71b865d75821767eaac2efd404a8abed9e099166986ed39d3d5d9, vars: {}, profile: retail, target: dev, version: 1.12.2
+[0m01:57:07.750589 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m01:57:07.751601 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m01:57:07.752591 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m01:57:07.764246 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '8fc6a75d-433b-4057-b20e-191d93f347de', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c90b22ade50>]}
+[0m01:57:07.950554 [debug] [MainThread]: Wrote artifact WritableManifest to /usr/local/airflow/include/dbt/target/manifest.json
+[0m01:57:07.963377 [debug] [MainThread]: Wrote artifact SemanticManifest to /usr/local/airflow/include/dbt/target/semantic_manifest.json
+[0m01:57:08.005720 [debug] [MainThread]: Wrote artifact OsiDocument to /usr/local/airflow/include/dbt/target/osi_document.json
+[0m01:57:08.539054 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '8fc6a75d-433b-4057-b20e-191d93f347de', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c90b2237b60>]}
+[0m01:57:08.541386 [info ] [MainThread]: Found 7 models, 23 data tests, 2 sources, 634 macros
+[0m01:57:08.544043 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8fc6a75d-433b-4057-b20e-191d93f347de', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c90b209f150>]}
+[0m01:57:08.551881 [info ] [MainThread]: 
+[0m01:57:08.554143 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m01:57:08.556716 [info ] [MainThread]: 
+[0m01:57:08.560217 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m01:57:08.577169 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_RETAIL_TRANSFORM'
+[0m01:57:08.746874 [debug] [ThreadPool]: Using snowflake connection "list_RETAIL_TRANSFORM"
+[0m01:57:08.748327 [debug] [ThreadPool]: On list_RETAIL_TRANSFORM: show objects in RETAIL.TRANSFORM
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "retail", "target_name": "dev", "connection_name": "list_RETAIL_TRANSFORM"} */;
+[0m01:57:08.749837 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m01:57:10.812389 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 2.063 seconds
+[0m01:57:10.823309 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8fc6a75d-433b-4057-b20e-191d93f347de', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c90b1e9db20>]}
+[0m01:57:10.835411 [debug] [Thread-1 (]: Began running node test.retail.not_null_int_retail__invoice_lines_line_total.48f95636d9
+[0m01:57:10.837088 [info ] [Thread-1 (]: 1 of 2 START test not_null_int_retail__invoice_lines_line_total ................ [RUN]
+[0m01:57:10.836221 [debug] [Thread-2 (]: Began running node test.retail.not_null_int_retail__invoice_lines_quantity.b03ac4060e
+[0m01:57:10.839099 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_RETAIL_TRANSFORM, now test.retail.not_null_int_retail__invoice_lines_line_total.48f95636d9)
+[0m01:57:10.843066 [debug] [Thread-1 (]: Began compiling node test.retail.not_null_int_retail__invoice_lines_line_total.48f95636d9
+[0m01:57:10.841047 [info ] [Thread-2 (]: 2 of 2 START test not_null_int_retail__invoice_lines_quantity .................. [RUN]
+[0m01:57:10.856565 [debug] [Thread-2 (]: Acquiring new snowflake connection 'test.retail.not_null_int_retail__invoice_lines_quantity.b03ac4060e'
+[0m01:57:10.863381 [debug] [Thread-2 (]: Began compiling node test.retail.not_null_int_retail__invoice_lines_quantity.b03ac4060e
+[0m01:57:10.896000 [debug] [Thread-1 (]: Writing injected SQL for node "test.retail.not_null_int_retail__invoice_lines_line_total.48f95636d9"
+[0m01:57:10.900706 [debug] [Thread-2 (]: Writing injected SQL for node "test.retail.not_null_int_retail__invoice_lines_quantity.b03ac4060e"
+[0m01:57:10.928830 [debug] [Thread-2 (]: Began executing node test.retail.not_null_int_retail__invoice_lines_quantity.b03ac4060e
+[0m01:57:10.953851 [debug] [Thread-1 (]: Began executing node test.retail.not_null_int_retail__invoice_lines_line_total.48f95636d9
+[0m01:57:11.035291 [debug] [Thread-1 (]: Writing runtime sql for node "test.retail.not_null_int_retail__invoice_lines_line_total.48f95636d9"
+[0m01:57:11.036288 [debug] [Thread-2 (]: Writing runtime sql for node "test.retail.not_null_int_retail__invoice_lines_quantity.b03ac4060e"
+[0m01:57:11.067054 [debug] [Thread-1 (]: Using snowflake connection "test.retail.not_null_int_retail__invoice_lines_line_total.48f95636d9"
+[0m01:57:11.069144 [debug] [Thread-1 (]: On test.retail.not_null_int_retail__invoice_lines_line_total.48f95636d9: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select line_total
+from RETAIL.TRANSFORM.int_retail__invoice_lines
+where line_total is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "retail", "target_name": "dev", "node_id": "test.retail.not_null_int_retail__invoice_lines_line_total.48f95636d9"} */
+[0m01:57:11.073557 [debug] [Thread-2 (]: Using snowflake connection "test.retail.not_null_int_retail__invoice_lines_quantity.b03ac4060e"
+[0m01:57:11.076454 [debug] [Thread-2 (]: On test.retail.not_null_int_retail__invoice_lines_quantity.b03ac4060e: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select quantity
+from RETAIL.TRANSFORM.int_retail__invoice_lines
+where quantity is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "retail", "target_name": "dev", "node_id": "test.retail.not_null_int_retail__invoice_lines_quantity.b03ac4060e"} */
+[0m01:57:11.080107 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m01:57:11.810270 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.739 seconds
+[0m01:57:11.848508 [info ] [Thread-1 (]: 1 of 2 PASS not_null_int_retail__invoice_lines_line_total ...................... [[32mPASS[0m in 1.01s]
+[0m01:57:11.852162 [debug] [Thread-1 (]: Finished running node test.retail.not_null_int_retail__invoice_lines_line_total.48f95636d9
+[0m01:57:12.573488 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.494 seconds
+[0m01:57:12.577953 [info ] [Thread-2 (]: 2 of 2 PASS not_null_int_retail__invoice_lines_quantity ........................ [[32mPASS[0m in 1.72s]
+[0m01:57:12.580636 [debug] [Thread-2 (]: Finished running node test.retail.not_null_int_retail__invoice_lines_quantity.b03ac4060e
+[0m01:57:12.591123 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m01:57:12.596121 [debug] [MainThread]: Connection 'test.retail.not_null_int_retail__invoice_lines_line_total.48f95636d9' was left open.
+[0m01:57:12.598814 [debug] [MainThread]: On test.retail.not_null_int_retail__invoice_lines_line_total.48f95636d9: Close
+[0m01:57:13.774520 [debug] [MainThread]: Connection 'test.retail.not_null_int_retail__invoice_lines_quantity.b03ac4060e' was left open.
+[0m01:57:13.775864 [debug] [MainThread]: On test.retail.not_null_int_retail__invoice_lines_quantity.b03ac4060e: Close
+[0m01:57:14.245901 [info ] [MainThread]: 
+[0m01:57:14.248069 [info ] [MainThread]: Finished running 2 data tests in 0 hours 0 minutes and 5.69 seconds (5.69s).
+[0m01:57:14.251419 [debug] [MainThread]: Command end result
+[0m01:57:14.348819 [debug] [MainThread]: Wrote artifact WritableManifest to /usr/local/airflow/include/dbt/target/manifest.json
+[0m01:57:14.361689 [debug] [MainThread]: Wrote artifact SemanticManifest to /usr/local/airflow/include/dbt/target/semantic_manifest.json
+[0m01:57:14.376315 [debug] [MainThread]: Wrote artifact OsiDocument to /usr/local/airflow/include/dbt/target/osi_document.json
+[0m01:57:14.391866 [debug] [MainThread]: Wrote artifact RunExecutionResult to /usr/local/airflow/include/dbt/target/run_results.json
+[0m01:57:14.393545 [info ] [MainThread]: 
+[0m01:57:14.395523 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m01:57:14.397508 [info ] [MainThread]: 
+[0m01:57:14.399541 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=2
+[0m01:57:14.403280 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 10.487953, "process_in_blocks": "1685", "process_kernel_time": 1.356387, "process_mem_max_rss": "308432", "process_out_blocks": "24", "process_user_time": 8.089738}
+[0m01:57:14.406131 [debug] [MainThread]: Command `dbt test` succeeded at 01:57:14.405683 after 10.49 seconds
+[0m01:57:14.408787 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c90b1b4b050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c90b195f5f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c90b195c940>]}
+[0m01:57:14.412507 [debug] [MainThread]: Flushing usage events
+[0m01:57:14.618702 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m02:03:04.231658 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x777468445fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77746a2f1bd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x777466d0f9d0>]}
+
+
+============================== 02:03:04.247914 | b4617a42-77a3-4fce-b5ba-5bb3aaf05b39 ==============================
+[0m02:03:04.247914 [info ] [MainThread]: Running with dbt=1.12.2
+[0m02:03:04.250267 [debug] [MainThread]: running dbt with arguments {'log_path': '/usr/local/airflow/include/dbt/logs', 'target_path': 'None', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'printer_width': '80', 'warn_error': 'None', 'version_check': 'True', 'log_format': 'default', 'fail_fast': 'False', 'quiet': 'False', 'introspect': 'True', 'debug': 'False', 'empty': 'False', 'use_colors': 'True', 'no_print': 'None', 'log_cache_events': 'False', 'maximum_seed_size_mib': '1', 'hints_enabled': 'True', 'static_parser': 'True', 'profiles_dir': '/usr/local/airflow/include/dbt/', 'cache_selected_only': 'False', 'indirect_selection': 'eager', 'invocation_command': 'dbt run --select marts --profiles-dir /usr/local/airflow/include/dbt/', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True', 'use_experimental_parser': 'False'}
+[0m02:03:10.369281 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m02:03:10.371938 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m02:03:10.373666 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m02:03:10.923778 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b4617a42-77a3-4fce-b5ba-5bb3aaf05b39', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x777441dd76f0>]}
+[0m02:03:11.049761 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b4617a42-77a3-4fce-b5ba-5bb3aaf05b39', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x777441c879b0>]}
+[0m02:03:11.053930 [info ] [MainThread]: Registered adapter: snowflake=1.10.5
+[0m02:03:11.336232 [debug] [MainThread]: checksum: cc35750ecde71b865d75821767eaac2efd404a8abed9e099166986ed39d3d5d9, vars: {}, profile: retail, target: dev, version: 1.12.2
+[0m02:03:12.972609 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 3 files changed.
+[0m02:03:12.975038 [debug] [MainThread]: Partial parsing: updated file: retail://models/marts/core/fct_invoices.sql
+[0m02:03:12.977293 [debug] [MainThread]: Partial parsing: updated file: retail://models/marts/core/dim_product.sql
+[0m02:03:12.978938 [debug] [MainThread]: Partial parsing: updated file: retail://models/marts/core/dim_customer.sql
+[0m02:03:12.981141 [debug] [MainThread]: Partial parsing: updated file: retail://models/marts/core/dim_datetime.sql
+[0m02:03:16.245463 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b4617a42-77a3-4fce-b5ba-5bb3aaf05b39', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x777441612750>]}
+[0m02:03:16.535063 [debug] [MainThread]: Wrote artifact WritableManifest to /usr/local/airflow/include/dbt/target/manifest.json
+[0m02:03:16.553502 [debug] [MainThread]: Wrote artifact SemanticManifest to /usr/local/airflow/include/dbt/target/semantic_manifest.json
+[0m02:03:16.736790 [debug] [MainThread]: Wrote artifact OsiDocument to /usr/local/airflow/include/dbt/target/osi_document.json
+[0m02:03:16.872415 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b4617a42-77a3-4fce-b5ba-5bb3aaf05b39', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77744031e120>]}
+[0m02:03:16.875544 [info ] [MainThread]: Found 7 models, 23 data tests, 2 sources, 634 macros
+[0m02:03:16.878329 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b4617a42-77a3-4fce-b5ba-5bb3aaf05b39', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x777440314590>]}
+[0m02:03:16.885512 [info ] [MainThread]: 
+[0m02:03:16.891324 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m02:03:16.895746 [info ] [MainThread]: 
+[0m02:03:16.908324 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m02:03:16.929888 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_RETAIL'
+[0m02:03:17.259654 [debug] [ThreadPool]: Using snowflake connection "list_RETAIL"
+[0m02:03:17.262411 [debug] [ThreadPool]: On list_RETAIL: show terse schemas in database RETAIL
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "retail", "target_name": "dev", "connection_name": "list_RETAIL"} */
+[0m02:03:17.264889 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m02:03:20.699267 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 3.437 seconds
+[0m02:03:20.715166 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_RETAIL, now list_RETAIL_TRANSFORM)
+[0m02:03:20.730155 [debug] [ThreadPool]: Using snowflake connection "list_RETAIL_TRANSFORM"
+[0m02:03:20.731777 [debug] [ThreadPool]: On list_RETAIL_TRANSFORM: show objects in RETAIL.TRANSFORM
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "retail", "target_name": "dev", "connection_name": "list_RETAIL_TRANSFORM"} */;
+[0m02:03:21.305911 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 0.572 seconds
+[0m02:03:21.321827 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b4617a42-77a3-4fce-b5ba-5bb3aaf05b39', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77743b379bf0>]}
+[0m02:03:21.362993 [debug] [Thread-1 (]: Began running node model.retail.dim_customer
+[0m02:03:21.370861 [debug] [Thread-2 (]: Began running node model.retail.dim_datetime
+[0m02:03:21.370091 [info ] [Thread-1 (]: 1 of 4 START sql table model TRANSFORM.dim_customer ............................ [RUN]
+[0m02:03:21.364598 [debug] [Thread-3 (]: Began running node model.retail.dim_product
+[0m02:03:21.373197 [info ] [Thread-2 (]: 2 of 4 START sql table model TRANSFORM.dim_datetime ............................ [RUN]
+[0m02:03:21.374963 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_RETAIL_TRANSFORM, now model.retail.dim_customer)
+[0m02:03:21.377195 [info ] [Thread-3 (]: 3 of 4 START sql table model TRANSFORM.dim_product ............................. [RUN]
+[0m02:03:21.380055 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.retail.dim_datetime'
+[0m02:03:21.382426 [debug] [Thread-1 (]: Began compiling node model.retail.dim_customer
+[0m02:03:21.385613 [debug] [Thread-3 (]: Acquiring new snowflake connection 'model.retail.dim_product'
+[0m02:03:21.388872 [debug] [Thread-2 (]: Began compiling node model.retail.dim_datetime
+[0m02:03:21.402529 [debug] [Thread-3 (]: Began compiling node model.retail.dim_product
+[0m02:03:21.597584 [debug] [Thread-2 (]: Writing injected SQL for node "model.retail.dim_datetime"
+[0m02:03:21.594541 [debug] [Thread-1 (]: Writing injected SQL for node "model.retail.dim_customer"
+[0m02:03:21.624615 [debug] [Thread-3 (]: Writing injected SQL for node "model.retail.dim_product"
+[0m02:03:21.680287 [debug] [Thread-3 (]: Began executing node model.retail.dim_product
+[0m02:03:21.721838 [debug] [Thread-2 (]: Began executing node model.retail.dim_datetime
+[0m02:03:21.740459 [debug] [Thread-1 (]: Began executing node model.retail.dim_customer
+[0m02:03:21.779118 [debug] [Thread-2 (]: Writing runtime sql for node "model.retail.dim_datetime"
+[0m02:03:21.800770 [debug] [Thread-3 (]: Writing runtime sql for node "model.retail.dim_product"
+[0m02:03:21.801613 [debug] [Thread-1 (]: Writing runtime sql for node "model.retail.dim_customer"
+[0m02:03:21.854377 [debug] [Thread-1 (]: Using snowflake connection "model.retail.dim_customer"
+[0m02:03:21.860797 [debug] [Thread-1 (]: On model.retail.dim_customer: create or replace transient table RETAIL.TRANSFORM.dim_customer
+    
+    
+    
+    as (-- dim_customer.sql
+with customers as (
+    select distinct
+        customer_id,
+        country
+    from RETAIL.TRANSFORM.int_retail__invoice_lines
+    where customer_id is not null
+),
+
+country as (
+    select * from RETAIL.TRANSFORM.stg_retail__country
+)
+
+select
+    md5(cast(coalesce(cast(customers.customer_id as TEXT), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(customers.country as TEXT), '_dbt_utils_surrogate_key_null_') as TEXT)) as customer_key,
+    customers.customer_id,
+    customers.country,
+    country.iso
+from customers
+left join country
+    on upper(customers.country) = upper(country.country_name)
+    )
+
+/* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "retail", "target_name": "dev", "node_id": "model.retail.dim_customer"} */;
+[0m02:03:21.860056 [debug] [Thread-3 (]: Using snowflake connection "model.retail.dim_product"
+[0m02:03:21.865480 [debug] [Thread-3 (]: On model.retail.dim_product: create or replace transient table RETAIL.TRANSFORM.dim_product
+    
+    
+    
+    as (-- dim_product.sql
+with products as (
+    select distinct
+        stock_code,
+        description,
+        unit_price
+    from RETAIL.TRANSFORM.int_retail__invoice_lines
+    where stock_code is not null
+      and unit_price > 0
+)
+
+select
+    md5(cast(coalesce(cast(stock_code as TEXT), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(description as TEXT), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(unit_price as TEXT), '_dbt_utils_surrogate_key_null_') as TEXT)) as product_key,
+    stock_code,
+    description,
+    unit_price as price
+from products
+    )
+
+/* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "retail", "target_name": "dev", "node_id": "model.retail.dim_product"} */;
+[0m02:03:21.869814 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m02:03:21.868665 [debug] [Thread-2 (]: Using snowflake connection "model.retail.dim_datetime"
+[0m02:03:21.874459 [debug] [Thread-2 (]: On model.retail.dim_datetime: create or replace transient table RETAIL.TRANSFORM.dim_datetime
+    
+    
+    
+    as (-- dim_datetime.sql
+with dates as (
+    select distinct invoice_datetime
+    from RETAIL.TRANSFORM.int_retail__invoice_lines
+    where invoice_datetime is not null
+)
+
+select
+    invoice_datetime            as datetime_id,
+    invoice_datetime            as datetime,
+    year(invoice_datetime)      as year,
+    month(invoice_datetime)     as month,
+    day(invoice_datetime)       as day,
+    hour(invoice_datetime)      as hour,
+    minute(invoice_datetime)    as minute,
+    dayofweek(invoice_datetime) as weekday
+from dates
+    )
+
+/* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "retail", "target_name": "dev", "node_id": "model.retail.dim_datetime"} */;
+[0m02:03:21.876360 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m02:03:23.648747 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.786 seconds
+[0m02:03:23.688481 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b4617a42-77a3-4fce-b5ba-5bb3aaf05b39', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77743b281190>]}
+[0m02:03:23.691693 [info ] [Thread-1 (]: 1 of 4 OK created sql table model TRANSFORM.dim_customer ....................... [[32mSUCCESS 1[0m in 2.31s]
+[0m02:03:23.695840 [debug] [Thread-1 (]: Finished running node model.retail.dim_customer
+[0m02:03:24.238279 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 2.368 seconds
+[0m02:03:24.245866 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b4617a42-77a3-4fce-b5ba-5bb3aaf05b39', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77744134bb70>]}
+[0m02:03:24.249952 [info ] [Thread-3 (]: 3 of 4 OK created sql table model TRANSFORM.dim_product ........................ [[32mSUCCESS 1[0m in 2.86s]
+[0m02:03:24.254146 [debug] [Thread-3 (]: Finished running node model.retail.dim_product
+[0m02:03:25.056366 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 3.180 seconds
+[0m02:03:25.062191 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b4617a42-77a3-4fce-b5ba-5bb3aaf05b39', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77743b22cff0>]}
+[0m02:03:25.065938 [info ] [Thread-2 (]: 2 of 4 OK created sql table model TRANSFORM.dim_datetime ....................... [[32mSUCCESS 1[0m in 3.68s]
+[0m02:03:25.070305 [debug] [Thread-2 (]: Finished running node model.retail.dim_datetime
+[0m02:03:25.076730 [debug] [Thread-4 (]: Began running node model.retail.fct_invoices
+[0m02:03:25.082470 [info ] [Thread-4 (]: 4 of 4 START sql table model TRANSFORM.fct_invoices ............................ [RUN]
+[0m02:03:25.086116 [debug] [Thread-4 (]: Acquiring new snowflake connection 'model.retail.fct_invoices'
+[0m02:03:25.090973 [debug] [Thread-4 (]: Began compiling node model.retail.fct_invoices
+[0m02:03:25.118610 [debug] [Thread-4 (]: Writing injected SQL for node "model.retail.fct_invoices"
+[0m02:03:25.153107 [debug] [Thread-4 (]: Began executing node model.retail.fct_invoices
+[0m02:03:25.165698 [debug] [Thread-4 (]: Writing runtime sql for node "model.retail.fct_invoices"
+[0m02:03:25.193649 [debug] [Thread-4 (]: Using snowflake connection "model.retail.fct_invoices"
+[0m02:03:25.195948 [debug] [Thread-4 (]: On model.retail.fct_invoices: create or replace transient table RETAIL.TRANSFORM.fct_invoices
+    
+    
+    
+    as (-- fct_invoices.sql
+with lines as (
+    select * from RETAIL.TRANSFORM.int_retail__invoice_lines
+),
+
+customer_dim as (
+    select * from RETAIL.TRANSFORM.dim_customer
+),
+
+product_dim as (
+    select * from RETAIL.TRANSFORM.dim_product
+),
+
+datetime_dim as (
+    select * from RETAIL.TRANSFORM.dim_datetime
+)
+
+select
+    lines.invoice_no,
+    datetime_dim.datetime_id,
+    product_dim.product_key,
+    customer_dim.customer_key,
+    lines.quantity,
+    lines.line_total as total
+from lines
+inner join datetime_dim
+    on lines.invoice_datetime = datetime_dim.datetime_id
+inner join product_dim
+    on lines.stock_code = product_dim.stock_code
+    and lines.description = product_dim.description
+    and lines.unit_price = product_dim.price
+inner join customer_dim
+    on lines.customer_id = customer_dim.customer_id
+    and lines.country = customer_dim.country
+    )
+
+/* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "retail", "target_name": "dev", "node_id": "model.retail.fct_invoices"} */;
+[0m02:03:25.197886 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m02:03:29.080609 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 3.882 seconds
+[0m02:03:29.091102 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b4617a42-77a3-4fce-b5ba-5bb3aaf05b39', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x777441354d50>]}
+[0m02:03:29.095454 [info ] [Thread-4 (]: 4 of 4 OK created sql table model TRANSFORM.fct_invoices ....................... [[32mSUCCESS 1[0m in 4.01s]
+[0m02:03:29.099758 [debug] [Thread-4 (]: Finished running node model.retail.fct_invoices
+[0m02:03:29.111111 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m02:03:29.112797 [debug] [MainThread]: Connection 'model.retail.dim_customer' was left open.
+[0m02:03:29.114332 [debug] [MainThread]: On model.retail.dim_customer: Close
+[0m02:03:29.581247 [debug] [MainThread]: Connection 'model.retail.dim_datetime' was left open.
+[0m02:03:29.584348 [debug] [MainThread]: On model.retail.dim_datetime: Close
+[0m02:03:30.134363 [debug] [MainThread]: Connection 'model.retail.dim_product' was left open.
+[0m02:03:30.136620 [debug] [MainThread]: On model.retail.dim_product: Close
+[0m02:03:30.594048 [debug] [MainThread]: Connection 'model.retail.fct_invoices' was left open.
+[0m02:03:30.595953 [debug] [MainThread]: On model.retail.fct_invoices: Close
+[0m02:03:31.039593 [info ] [MainThread]: 
+[0m02:03:31.041490 [info ] [MainThread]: Finished running 4 table models in 0 hours 0 minutes and 14.13 seconds (14.13s).
+[0m02:03:31.044910 [debug] [MainThread]: Command end result
+[0m02:03:31.185779 [debug] [MainThread]: Wrote artifact WritableManifest to /usr/local/airflow/include/dbt/target/manifest.json
+[0m02:03:31.203285 [debug] [MainThread]: Wrote artifact SemanticManifest to /usr/local/airflow/include/dbt/target/semantic_manifest.json
+[0m02:03:31.268070 [debug] [MainThread]: Wrote artifact OsiDocument to /usr/local/airflow/include/dbt/target/osi_document.json
+[0m02:03:31.293116 [debug] [MainThread]: Wrote artifact RunExecutionResult to /usr/local/airflow/include/dbt/target/run_results.json
+[0m02:03:31.294683 [info ] [MainThread]: 
+[0m02:03:31.295980 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m02:03:31.297641 [info ] [MainThread]: 
+[0m02:03:31.299261 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=4
+[0m02:03:31.301868 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 27.370539, "process_in_blocks": "2021", "process_kernel_time": 14.958413, "process_mem_max_rss": "289924", "process_out_blocks": "24", "process_user_time": 15.545017}
+[0m02:03:31.303746 [debug] [MainThread]: Command `dbt run` succeeded at 02:03:31.303498 after 27.37 seconds
+[0m02:03:31.305816 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x777466f087c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7774675f4c20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7774418e0b90>]}
+[0m02:03:31.308596 [debug] [MainThread]: Flushing usage events
+[0m02:03:31.533537 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m02:03:41.505898 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75ec29bd9fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75ec2ba81bd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75ec27a3f9d0>]}
+
+
+============================== 02:03:41.511484 | 1fff5059-598c-4b18-a0a8-e01b27b54e64 ==============================
+[0m02:03:41.511484 [info ] [MainThread]: Running with dbt=1.12.2
+[0m02:03:41.513365 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'log_path': '/usr/local/airflow/include/dbt/logs', 'hints_enabled': 'True', 'target_path': 'None', 'write_json': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'partial_parse': 'True', 'invocation_command': 'dbt test --select marts --profiles-dir /usr/local/airflow/include/dbt/', 'debug': 'False', 'warn_error': 'None', 'empty': 'None', 'printer_width': '80', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'quiet': 'False', 'maximum_seed_size_mib': '1', 'no_print': 'None', 'log_cache_events': 'False', 'use_experimental_parser': 'False', 'version_check': 'True', 'static_parser': 'True', 'log_format': 'default', 'profiles_dir': '/usr/local/airflow/include/dbt/', 'introspect': 'True'}
+[0m02:03:44.604004 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m02:03:44.605826 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m02:03:44.607587 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m02:03:44.880550 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1fff5059-598c-4b18-a0a8-e01b27b54e64', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75ec034c36f0>]}
+[0m02:03:44.973387 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '1fff5059-598c-4b18-a0a8-e01b27b54e64', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75ec033479b0>]}
+[0m02:03:44.976180 [info ] [MainThread]: Registered adapter: snowflake=1.10.5
+[0m02:03:45.187344 [debug] [MainThread]: checksum: cc35750ecde71b865d75821767eaac2efd404a8abed9e099166986ed39d3d5d9, vars: {}, profile: retail, target: dev, version: 1.12.2
+[0m02:03:46.948886 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m02:03:46.950254 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m02:03:46.951442 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m02:03:46.963531 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '1fff5059-598c-4b18-a0a8-e01b27b54e64', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75ec02d51e50>]}
+[0m02:03:47.164049 [debug] [MainThread]: Wrote artifact WritableManifest to /usr/local/airflow/include/dbt/target/manifest.json
+[0m02:03:47.173763 [debug] [MainThread]: Wrote artifact SemanticManifest to /usr/local/airflow/include/dbt/target/semantic_manifest.json
+[0m02:03:47.220536 [debug] [MainThread]: Wrote artifact OsiDocument to /usr/local/airflow/include/dbt/target/osi_document.json
+[0m02:03:48.459180 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '1fff5059-598c-4b18-a0a8-e01b27b54e64', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75ec02cefb60>]}
+[0m02:03:48.461925 [info ] [MainThread]: Found 7 models, 23 data tests, 2 sources, 634 macros
+[0m02:03:48.465618 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1fff5059-598c-4b18-a0a8-e01b27b54e64', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75ec02b97150>]}
+[0m02:03:48.475123 [info ] [MainThread]: 
+[0m02:03:48.477667 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m02:03:48.481610 [info ] [MainThread]: 
+[0m02:03:48.484264 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m02:03:48.499901 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_RETAIL_TRANSFORM'
+[0m02:03:48.614809 [debug] [ThreadPool]: Using snowflake connection "list_RETAIL_TRANSFORM"
+[0m02:03:48.616172 [debug] [ThreadPool]: On list_RETAIL_TRANSFORM: show objects in RETAIL.TRANSFORM
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "retail", "target_name": "dev", "connection_name": "list_RETAIL_TRANSFORM"} */;
+[0m02:03:48.617738 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m02:03:50.698461 [debug] [ThreadPool]: SQL status: SUCCESS 7 in 2.081 seconds
+[0m02:03:50.711052 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1fff5059-598c-4b18-a0a8-e01b27b54e64', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75ec02999b20>]}
+[0m02:03:50.736233 [debug] [Thread-2 (]: Began running node test.retail.not_null_dim_datetime_datetime_id.d0f57ddc2d
+[0m02:03:50.737200 [debug] [Thread-1 (]: Began running node test.retail.not_null_dim_customer_customer_key.c289fe4d1f
+[0m02:03:50.738680 [debug] [Thread-4 (]: Began running node test.retail.not_null_fct_invoices_customer_key.9035c7906c
+[0m02:03:50.740425 [debug] [Thread-3 (]: Began running node test.retail.not_null_dim_product_product_key.f0e1d838d3
+[0m02:03:50.741896 [info ] [Thread-2 (]: 2 of 13 START test not_null_dim_datetime_datetime_id ........................... [RUN]
+[0m02:03:50.744207 [info ] [Thread-1 (]: 1 of 13 START test not_null_dim_customer_customer_key .......................... [RUN]
+[0m02:03:50.747197 [info ] [Thread-4 (]: 4 of 13 START test not_null_fct_invoices_customer_key .......................... [RUN]
+[0m02:03:50.749810 [info ] [Thread-3 (]: 3 of 13 START test not_null_dim_product_product_key ............................ [RUN]
+[0m02:03:50.752650 [debug] [Thread-2 (]: Acquiring new snowflake connection 'test.retail.not_null_dim_datetime_datetime_id.d0f57ddc2d'
+[0m02:03:50.755198 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_RETAIL_TRANSFORM, now test.retail.not_null_dim_customer_customer_key.c289fe4d1f)
+[0m02:03:50.758455 [debug] [Thread-4 (]: Acquiring new snowflake connection 'test.retail.not_null_fct_invoices_customer_key.9035c7906c'
+[0m02:03:50.764111 [debug] [Thread-3 (]: Acquiring new snowflake connection 'test.retail.not_null_dim_product_product_key.f0e1d838d3'
+[0m02:03:50.765973 [debug] [Thread-2 (]: Began compiling node test.retail.not_null_dim_datetime_datetime_id.d0f57ddc2d
+[0m02:03:50.768163 [debug] [Thread-1 (]: Began compiling node test.retail.not_null_dim_customer_customer_key.c289fe4d1f
+[0m02:03:50.770272 [debug] [Thread-4 (]: Began compiling node test.retail.not_null_fct_invoices_customer_key.9035c7906c
+[0m02:03:50.773875 [debug] [Thread-3 (]: Began compiling node test.retail.not_null_dim_product_product_key.f0e1d838d3
+[0m02:03:50.882361 [debug] [Thread-1 (]: Writing injected SQL for node "test.retail.not_null_dim_customer_customer_key.c289fe4d1f"
+[0m02:03:50.885323 [debug] [Thread-4 (]: Writing injected SQL for node "test.retail.not_null_fct_invoices_customer_key.9035c7906c"
+[0m02:03:50.888998 [debug] [Thread-2 (]: Writing injected SQL for node "test.retail.not_null_dim_datetime_datetime_id.d0f57ddc2d"
+[0m02:03:50.906485 [debug] [Thread-3 (]: Writing injected SQL for node "test.retail.not_null_dim_product_product_key.f0e1d838d3"
+[0m02:03:50.948105 [debug] [Thread-4 (]: Began executing node test.retail.not_null_fct_invoices_customer_key.9035c7906c
+[0m02:03:50.973282 [debug] [Thread-2 (]: Began executing node test.retail.not_null_dim_datetime_datetime_id.d0f57ddc2d
+[0m02:03:50.992052 [debug] [Thread-3 (]: Began executing node test.retail.not_null_dim_product_product_key.f0e1d838d3
+[0m02:03:51.001798 [debug] [Thread-2 (]: Writing runtime sql for node "test.retail.not_null_dim_datetime_datetime_id.d0f57ddc2d"
+[0m02:03:51.003767 [debug] [Thread-3 (]: Writing runtime sql for node "test.retail.not_null_dim_product_product_key.f0e1d838d3"
+[0m02:03:51.007043 [debug] [Thread-4 (]: Writing runtime sql for node "test.retail.not_null_fct_invoices_customer_key.9035c7906c"
+[0m02:03:50.993246 [debug] [Thread-1 (]: Began executing node test.retail.not_null_dim_customer_customer_key.c289fe4d1f
+[0m02:03:51.018535 [debug] [Thread-1 (]: Writing runtime sql for node "test.retail.not_null_dim_customer_customer_key.c289fe4d1f"
+[0m02:03:51.043402 [debug] [Thread-1 (]: Using snowflake connection "test.retail.not_null_dim_customer_customer_key.c289fe4d1f"
+[0m02:03:51.045054 [debug] [Thread-1 (]: On test.retail.not_null_dim_customer_customer_key.c289fe4d1f: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customer_key
+from RETAIL.TRANSFORM.dim_customer
+where customer_key is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "retail", "target_name": "dev", "node_id": "test.retail.not_null_dim_customer_customer_key.c289fe4d1f"} */
+[0m02:03:51.050665 [debug] [Thread-2 (]: Using snowflake connection "test.retail.not_null_dim_datetime_datetime_id.d0f57ddc2d"
+[0m02:03:51.052680 [debug] [Thread-2 (]: On test.retail.not_null_dim_datetime_datetime_id.d0f57ddc2d: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select datetime_id
+from RETAIL.TRANSFORM.dim_datetime
+where datetime_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "retail", "target_name": "dev", "node_id": "test.retail.not_null_dim_datetime_datetime_id.d0f57ddc2d"} */
+[0m02:03:51.055682 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m02:03:51.060572 [debug] [Thread-4 (]: Using snowflake connection "test.retail.not_null_fct_invoices_customer_key.9035c7906c"
+[0m02:03:51.063105 [debug] [Thread-4 (]: On test.retail.not_null_fct_invoices_customer_key.9035c7906c: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customer_key
+from RETAIL.TRANSFORM.fct_invoices
+where customer_key is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "retail", "target_name": "dev", "node_id": "test.retail.not_null_fct_invoices_customer_key.9035c7906c"} */
+[0m02:03:51.066230 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m02:03:51.092040 [debug] [Thread-3 (]: Using snowflake connection "test.retail.not_null_dim_product_product_key.f0e1d838d3"
+[0m02:03:51.095923 [debug] [Thread-3 (]: On test.retail.not_null_dim_product_product_key.f0e1d838d3: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select product_key
+from RETAIL.TRANSFORM.dim_product
+where product_key is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "retail", "target_name": "dev", "node_id": "test.retail.not_null_dim_product_product_key.f0e1d838d3"} */
+[0m02:03:51.103743 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m02:03:51.406435 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.359 seconds
+[0m02:03:51.432213 [info ] [Thread-1 (]: 1 of 13 PASS not_null_dim_customer_customer_key ................................ [[32mPASS[0m in 0.68s]
+[0m02:03:51.434317 [debug] [Thread-1 (]: Finished running node test.retail.not_null_dim_customer_customer_key.c289fe4d1f
+[0m02:03:51.435839 [debug] [Thread-1 (]: Began running node test.retail.not_null_fct_invoices_datetime_id.e2e0365054
+[0m02:03:51.437321 [info ] [Thread-1 (]: 5 of 13 START test not_null_fct_invoices_datetime_id ........................... [RUN]
+[0m02:03:51.440330 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.retail.not_null_dim_customer_customer_key.c289fe4d1f, now test.retail.not_null_fct_invoices_datetime_id.e2e0365054)
+[0m02:03:51.442253 [debug] [Thread-1 (]: Began compiling node test.retail.not_null_fct_invoices_datetime_id.e2e0365054
+[0m02:03:51.451674 [debug] [Thread-1 (]: Writing injected SQL for node "test.retail.not_null_fct_invoices_datetime_id.e2e0365054"
+[0m02:03:51.484723 [debug] [Thread-1 (]: Began executing node test.retail.not_null_fct_invoices_datetime_id.e2e0365054
+[0m02:03:51.509008 [debug] [Thread-1 (]: Writing runtime sql for node "test.retail.not_null_fct_invoices_datetime_id.e2e0365054"
+[0m02:03:51.541240 [debug] [Thread-1 (]: Using snowflake connection "test.retail.not_null_fct_invoices_datetime_id.e2e0365054"
+[0m02:03:51.543474 [debug] [Thread-1 (]: On test.retail.not_null_fct_invoices_datetime_id.e2e0365054: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select datetime_id
+from RETAIL.TRANSFORM.fct_invoices
+where datetime_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "retail", "target_name": "dev", "node_id": "test.retail.not_null_fct_invoices_datetime_id.e2e0365054"} */
+[0m02:03:51.930300 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.385 seconds
+[0m02:03:51.933761 [info ] [Thread-1 (]: 5 of 13 PASS not_null_fct_invoices_datetime_id ................................. [[32mPASS[0m in 0.49s]
+[0m02:03:51.936008 [debug] [Thread-1 (]: Finished running node test.retail.not_null_fct_invoices_datetime_id.e2e0365054
+[0m02:03:51.937621 [debug] [Thread-1 (]: Began running node test.retail.not_null_fct_invoices_product_key.79c88324eb
+[0m02:03:51.939180 [info ] [Thread-1 (]: 6 of 13 START test not_null_fct_invoices_product_key ........................... [RUN]
+[0m02:03:51.940823 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.retail.not_null_fct_invoices_datetime_id.e2e0365054, now test.retail.not_null_fct_invoices_product_key.79c88324eb)
+[0m02:03:51.942850 [debug] [Thread-1 (]: Began compiling node test.retail.not_null_fct_invoices_product_key.79c88324eb
+[0m02:03:51.952212 [debug] [Thread-1 (]: Writing injected SQL for node "test.retail.not_null_fct_invoices_product_key.79c88324eb"
+[0m02:03:51.982651 [debug] [Thread-1 (]: Began executing node test.retail.not_null_fct_invoices_product_key.79c88324eb
+[0m02:03:51.986167 [debug] [Thread-1 (]: Writing runtime sql for node "test.retail.not_null_fct_invoices_product_key.79c88324eb"
+[0m02:03:52.002845 [debug] [Thread-1 (]: Using snowflake connection "test.retail.not_null_fct_invoices_product_key.79c88324eb"
+[0m02:03:52.004760 [debug] [Thread-1 (]: On test.retail.not_null_fct_invoices_product_key.79c88324eb: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select product_key
+from RETAIL.TRANSFORM.fct_invoices
+where product_key is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "retail", "target_name": "dev", "node_id": "test.retail.not_null_fct_invoices_product_key.79c88324eb"} */
+[0m02:03:52.337112 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.331 seconds
+[0m02:03:52.340616 [info ] [Thread-1 (]: 6 of 13 PASS not_null_fct_invoices_product_key ................................. [[32mPASS[0m in 0.40s]
+[0m02:03:52.342661 [debug] [Thread-1 (]: Finished running node test.retail.not_null_fct_invoices_product_key.79c88324eb
+[0m02:03:52.344085 [debug] [Thread-1 (]: Began running node test.retail.not_null_fct_invoices_total.720a273978
+[0m02:03:52.345448 [info ] [Thread-1 (]: 7 of 13 START test not_null_fct_invoices_total ................................. [RUN]
+[0m02:03:52.347111 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.retail.not_null_fct_invoices_product_key.79c88324eb, now test.retail.not_null_fct_invoices_total.720a273978)
+[0m02:03:52.348511 [debug] [Thread-1 (]: Began compiling node test.retail.not_null_fct_invoices_total.720a273978
+[0m02:03:52.360973 [debug] [Thread-1 (]: Writing injected SQL for node "test.retail.not_null_fct_invoices_total.720a273978"
+[0m02:03:52.384820 [debug] [Thread-1 (]: Began executing node test.retail.not_null_fct_invoices_total.720a273978
+[0m02:03:52.388130 [debug] [Thread-1 (]: Writing runtime sql for node "test.retail.not_null_fct_invoices_total.720a273978"
+[0m02:03:52.400647 [debug] [Thread-1 (]: Using snowflake connection "test.retail.not_null_fct_invoices_total.720a273978"
+[0m02:03:52.402108 [debug] [Thread-1 (]: On test.retail.not_null_fct_invoices_total.720a273978: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select total
+from RETAIL.TRANSFORM.fct_invoices
+where total is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "retail", "target_name": "dev", "node_id": "test.retail.not_null_fct_invoices_total.720a273978"} */
+[0m02:03:52.453725 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 1.388 seconds
+[0m02:03:52.461551 [info ] [Thread-4 (]: 4 of 13 PASS not_null_fct_invoices_customer_key ................................ [[32mPASS[0m in 1.70s]
+[0m02:03:52.463737 [debug] [Thread-4 (]: Finished running node test.retail.not_null_fct_invoices_customer_key.9035c7906c
+[0m02:03:52.465407 [debug] [Thread-4 (]: Began running node test.retail.relationships_fct_invoices_customer_key__customer_key__ref_dim_customer_.4480a200c4
+[0m02:03:52.466902 [info ] [Thread-4 (]: 8 of 13 START test relationships_fct_invoices_customer_key__customer_key__ref_dim_customer_  [RUN]
+[0m02:03:52.468997 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.retail.not_null_fct_invoices_customer_key.9035c7906c, now test.retail.relationships_fct_invoices_customer_key__customer_key__ref_dim_customer_.4480a200c4)
+[0m02:03:52.471585 [debug] [Thread-4 (]: Began compiling node test.retail.relationships_fct_invoices_customer_key__customer_key__ref_dim_customer_.4480a200c4
+[0m02:03:52.491871 [debug] [Thread-4 (]: Writing injected SQL for node "test.retail.relationships_fct_invoices_customer_key__customer_key__ref_dim_customer_.4480a200c4"
+[0m02:03:52.508363 [debug] [Thread-4 (]: Began executing node test.retail.relationships_fct_invoices_customer_key__customer_key__ref_dim_customer_.4480a200c4
+[0m02:03:52.511548 [debug] [Thread-4 (]: Writing runtime sql for node "test.retail.relationships_fct_invoices_customer_key__customer_key__ref_dim_customer_.4480a200c4"
+[0m02:03:52.536203 [debug] [Thread-4 (]: Using snowflake connection "test.retail.relationships_fct_invoices_customer_key__customer_key__ref_dim_customer_.4480a200c4"
+[0m02:03:52.537510 [debug] [Thread-4 (]: On test.retail.relationships_fct_invoices_customer_key__customer_key__ref_dim_customer_.4480a200c4: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with child as (
+    select customer_key as from_field
+    from RETAIL.TRANSFORM.fct_invoices
+    where customer_key is not null
+),
+
+parent as (
+    select customer_key as to_field
+    from RETAIL.TRANSFORM.dim_customer
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "retail", "target_name": "dev", "node_id": "test.retail.relationships_fct_invoices_customer_key__customer_key__ref_dim_customer_.4480a200c4"} */
+[0m02:03:52.778767 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.375 seconds
+[0m02:03:52.782903 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 1.679 seconds
+[0m02:03:52.789724 [info ] [Thread-1 (]: 7 of 13 PASS not_null_fct_invoices_total ....................................... [[32mPASS[0m in 0.44s]
+[0m02:03:52.794500 [info ] [Thread-3 (]: 3 of 13 PASS not_null_dim_product_product_key .................................. [[32mPASS[0m in 2.03s]
+[0m02:03:52.798947 [debug] [Thread-3 (]: Finished running node test.retail.not_null_dim_product_product_key.f0e1d838d3
+[0m02:03:52.797155 [debug] [Thread-1 (]: Finished running node test.retail.not_null_fct_invoices_total.720a273978
+[0m02:03:52.800686 [debug] [Thread-3 (]: Began running node test.retail.relationships_fct_invoices_datetime_id__datetime_id__ref_dim_datetime_.409e9f86af
+[0m02:03:52.802729 [debug] [Thread-1 (]: Began running node test.retail.relationships_fct_invoices_product_key__product_key__ref_dim_product_.2084457b7d
+[0m02:03:52.804583 [info ] [Thread-3 (]: 9 of 13 START test relationships_fct_invoices_datetime_id__datetime_id__ref_dim_datetime_  [RUN]
+[0m02:03:52.807215 [info ] [Thread-1 (]: 10 of 13 START test relationships_fct_invoices_product_key__product_key__ref_dim_product_  [RUN]
+[0m02:03:52.809742 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.retail.not_null_dim_product_product_key.f0e1d838d3, now test.retail.relationships_fct_invoices_datetime_id__datetime_id__ref_dim_datetime_.409e9f86af)
+[0m02:03:52.812049 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.retail.not_null_fct_invoices_total.720a273978, now test.retail.relationships_fct_invoices_product_key__product_key__ref_dim_product_.2084457b7d)
+[0m02:03:52.813974 [debug] [Thread-3 (]: Began compiling node test.retail.relationships_fct_invoices_datetime_id__datetime_id__ref_dim_datetime_.409e9f86af
+[0m02:03:52.815610 [debug] [Thread-1 (]: Began compiling node test.retail.relationships_fct_invoices_product_key__product_key__ref_dim_product_.2084457b7d
+[0m02:03:52.839454 [debug] [Thread-3 (]: Writing injected SQL for node "test.retail.relationships_fct_invoices_datetime_id__datetime_id__ref_dim_datetime_.409e9f86af"
+[0m02:03:52.849044 [debug] [Thread-1 (]: Writing injected SQL for node "test.retail.relationships_fct_invoices_product_key__product_key__ref_dim_product_.2084457b7d"
+[0m02:03:52.874165 [debug] [Thread-1 (]: Began executing node test.retail.relationships_fct_invoices_product_key__product_key__ref_dim_product_.2084457b7d
+[0m02:03:52.877418 [debug] [Thread-1 (]: Writing runtime sql for node "test.retail.relationships_fct_invoices_product_key__product_key__ref_dim_product_.2084457b7d"
+[0m02:03:52.880431 [debug] [Thread-3 (]: Began executing node test.retail.relationships_fct_invoices_datetime_id__datetime_id__ref_dim_datetime_.409e9f86af
+[0m02:03:52.883968 [debug] [Thread-3 (]: Writing runtime sql for node "test.retail.relationships_fct_invoices_datetime_id__datetime_id__ref_dim_datetime_.409e9f86af"
+[0m02:03:52.897373 [debug] [Thread-1 (]: Using snowflake connection "test.retail.relationships_fct_invoices_product_key__product_key__ref_dim_product_.2084457b7d"
+[0m02:03:52.898846 [debug] [Thread-1 (]: On test.retail.relationships_fct_invoices_product_key__product_key__ref_dim_product_.2084457b7d: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with child as (
+    select product_key as from_field
+    from RETAIL.TRANSFORM.fct_invoices
+    where product_key is not null
+),
+
+parent as (
+    select product_key as to_field
+    from RETAIL.TRANSFORM.dim_product
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "retail", "target_name": "dev", "node_id": "test.retail.relationships_fct_invoices_product_key__product_key__ref_dim_product_.2084457b7d"} */
+[0m02:03:52.902911 [debug] [Thread-3 (]: Using snowflake connection "test.retail.relationships_fct_invoices_datetime_id__datetime_id__ref_dim_datetime_.409e9f86af"
+[0m02:03:52.904628 [debug] [Thread-3 (]: On test.retail.relationships_fct_invoices_datetime_id__datetime_id__ref_dim_datetime_.409e9f86af: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with child as (
+    select datetime_id as from_field
+    from RETAIL.TRANSFORM.fct_invoices
+    where datetime_id is not null
+),
+
+parent as (
+    select datetime_id as to_field
+    from RETAIL.TRANSFORM.dim_datetime
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "retail", "target_name": "dev", "node_id": "test.retail.relationships_fct_invoices_datetime_id__datetime_id__ref_dim_datetime_.409e9f86af"} */
+[0m02:03:53.136415 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 2.081 seconds
+[0m02:03:53.141860 [info ] [Thread-2 (]: 2 of 13 PASS not_null_dim_datetime_datetime_id ................................. [[32mPASS[0m in 2.39s]
+[0m02:03:53.145319 [debug] [Thread-2 (]: Finished running node test.retail.not_null_dim_datetime_datetime_id.d0f57ddc2d
+[0m02:03:53.147276 [debug] [Thread-2 (]: Began running node test.retail.unique_dim_customer_customer_key.7b0683cc6e
+[0m02:03:53.149494 [info ] [Thread-2 (]: 11 of 13 START test unique_dim_customer_customer_key ........................... [RUN]
+[0m02:03:53.152777 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.retail.not_null_dim_datetime_datetime_id.d0f57ddc2d, now test.retail.unique_dim_customer_customer_key.7b0683cc6e)
+[0m02:03:53.155724 [debug] [Thread-2 (]: Began compiling node test.retail.unique_dim_customer_customer_key.7b0683cc6e
+[0m02:03:53.183892 [debug] [Thread-2 (]: Writing injected SQL for node "test.retail.unique_dim_customer_customer_key.7b0683cc6e"
+[0m02:03:53.201797 [debug] [Thread-2 (]: Began executing node test.retail.unique_dim_customer_customer_key.7b0683cc6e
+[0m02:03:53.205433 [debug] [Thread-2 (]: Writing runtime sql for node "test.retail.unique_dim_customer_customer_key.7b0683cc6e"
+[0m02:03:53.226478 [debug] [Thread-2 (]: Using snowflake connection "test.retail.unique_dim_customer_customer_key.7b0683cc6e"
+[0m02:03:53.228207 [debug] [Thread-2 (]: On test.retail.unique_dim_customer_customer_key.7b0683cc6e: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    customer_key as unique_field,
+    count(*) as n_records
+
+from RETAIL.TRANSFORM.dim_customer
+where customer_key is not null
+group by customer_key
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "retail", "target_name": "dev", "node_id": "test.retail.unique_dim_customer_customer_key.7b0683cc6e"} */
+[0m02:03:53.255811 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.716 seconds
+[0m02:03:53.259746 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.359 seconds
+[0m02:03:53.268252 [info ] [Thread-4 (]: 8 of 13 PASS relationships_fct_invoices_customer_key__customer_key__ref_dim_customer_  [[32mPASS[0m in 0.80s]
+[0m02:03:53.278521 [debug] [Thread-4 (]: Finished running node test.retail.relationships_fct_invoices_customer_key__customer_key__ref_dim_customer_.4480a200c4
+[0m02:03:53.274734 [info ] [Thread-1 (]: 10 of 13 PASS relationships_fct_invoices_product_key__product_key__ref_dim_product_  [[32mPASS[0m in 0.46s]
+[0m02:03:53.282026 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.376 seconds
+[0m02:03:53.284909 [debug] [Thread-4 (]: Began running node test.retail.unique_dim_datetime_datetime_id.5f02751247
+[0m02:03:53.291488 [debug] [Thread-1 (]: Finished running node test.retail.relationships_fct_invoices_product_key__product_key__ref_dim_product_.2084457b7d
+[0m02:03:53.300996 [info ] [Thread-3 (]: 9 of 13 PASS relationships_fct_invoices_datetime_id__datetime_id__ref_dim_datetime_  [[32mPASS[0m in 0.49s]
+[0m02:03:53.313868 [info ] [Thread-4 (]: 12 of 13 START test unique_dim_datetime_datetime_id ............................ [RUN]
+[0m02:03:53.320661 [debug] [Thread-1 (]: Began running node test.retail.unique_dim_product_product_key.1753236bd0
+[0m02:03:53.325645 [debug] [Thread-3 (]: Finished running node test.retail.relationships_fct_invoices_datetime_id__datetime_id__ref_dim_datetime_.409e9f86af
+[0m02:03:53.330343 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.retail.relationships_fct_invoices_customer_key__customer_key__ref_dim_customer_.4480a200c4, now test.retail.unique_dim_datetime_datetime_id.5f02751247)
+[0m02:03:53.333665 [info ] [Thread-1 (]: 13 of 13 START test unique_dim_product_product_key ............................. [RUN]
+[0m02:03:53.338109 [debug] [Thread-4 (]: Began compiling node test.retail.unique_dim_datetime_datetime_id.5f02751247
+[0m02:03:53.341343 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.retail.relationships_fct_invoices_product_key__product_key__ref_dim_product_.2084457b7d, now test.retail.unique_dim_product_product_key.1753236bd0)
+[0m02:03:53.356293 [debug] [Thread-1 (]: Began compiling node test.retail.unique_dim_product_product_key.1753236bd0
+[0m02:03:53.354426 [debug] [Thread-4 (]: Writing injected SQL for node "test.retail.unique_dim_datetime_datetime_id.5f02751247"
+[0m02:03:53.371334 [debug] [Thread-1 (]: Writing injected SQL for node "test.retail.unique_dim_product_product_key.1753236bd0"
+[0m02:03:53.391371 [debug] [Thread-1 (]: Began executing node test.retail.unique_dim_product_product_key.1753236bd0
+[0m02:03:53.396668 [debug] [Thread-1 (]: Writing runtime sql for node "test.retail.unique_dim_product_product_key.1753236bd0"
+[0m02:03:53.399415 [debug] [Thread-4 (]: Began executing node test.retail.unique_dim_datetime_datetime_id.5f02751247
+[0m02:03:53.424357 [debug] [Thread-4 (]: Writing runtime sql for node "test.retail.unique_dim_datetime_datetime_id.5f02751247"
+[0m02:03:53.447012 [debug] [Thread-1 (]: Using snowflake connection "test.retail.unique_dim_product_product_key.1753236bd0"
+[0m02:03:53.449102 [debug] [Thread-1 (]: On test.retail.unique_dim_product_product_key.1753236bd0: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    product_key as unique_field,
+    count(*) as n_records
+
+from RETAIL.TRANSFORM.dim_product
+where product_key is not null
+group by product_key
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "retail", "target_name": "dev", "node_id": "test.retail.unique_dim_product_product_key.1753236bd0"} */
+[0m02:03:53.453388 [debug] [Thread-4 (]: Using snowflake connection "test.retail.unique_dim_datetime_datetime_id.5f02751247"
+[0m02:03:53.455527 [debug] [Thread-4 (]: On test.retail.unique_dim_datetime_datetime_id.5f02751247: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    datetime_id as unique_field,
+    count(*) as n_records
+
+from RETAIL.TRANSFORM.dim_datetime
+where datetime_id is not null
+group by datetime_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "retail", "target_name": "dev", "node_id": "test.retail.unique_dim_datetime_datetime_id.5f02751247"} */
+[0m02:03:53.643887 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.412 seconds
+[0m02:03:53.659363 [info ] [Thread-2 (]: 11 of 13 PASS unique_dim_customer_customer_key ................................. [[32mPASS[0m in 0.51s]
+[0m02:03:53.666367 [debug] [Thread-2 (]: Finished running node test.retail.unique_dim_customer_customer_key.7b0683cc6e
+[0m02:03:53.826539 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.375 seconds
+[0m02:03:53.829635 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.371 seconds
+[0m02:03:53.835809 [info ] [Thread-1 (]: 13 of 13 PASS unique_dim_product_product_key ................................... [[32mPASS[0m in 0.49s]
+[0m02:03:53.845874 [debug] [Thread-1 (]: Finished running node test.retail.unique_dim_product_product_key.1753236bd0
+[0m02:03:53.842362 [info ] [Thread-4 (]: 12 of 13 PASS unique_dim_datetime_datetime_id .................................. [[32mPASS[0m in 0.51s]
+[0m02:03:53.862129 [debug] [Thread-4 (]: Finished running node test.retail.unique_dim_datetime_datetime_id.5f02751247
+[0m02:03:53.874029 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m02:03:53.875979 [debug] [MainThread]: Connection 'test.retail.unique_dim_product_product_key.1753236bd0' was left open.
+[0m02:03:53.877838 [debug] [MainThread]: On test.retail.unique_dim_product_product_key.1753236bd0: Close
+[0m02:03:54.315818 [debug] [MainThread]: Connection 'test.retail.unique_dim_customer_customer_key.7b0683cc6e' was left open.
+[0m02:03:54.317808 [debug] [MainThread]: On test.retail.unique_dim_customer_customer_key.7b0683cc6e: Close
+[0m02:03:54.860410 [debug] [MainThread]: Connection 'test.retail.unique_dim_datetime_datetime_id.5f02751247' was left open.
+[0m02:03:54.863457 [debug] [MainThread]: On test.retail.unique_dim_datetime_datetime_id.5f02751247: Close
+[0m02:03:55.312170 [debug] [MainThread]: Connection 'test.retail.relationships_fct_invoices_datetime_id__datetime_id__ref_dim_datetime_.409e9f86af' was left open.
+[0m02:03:55.313889 [debug] [MainThread]: On test.retail.relationships_fct_invoices_datetime_id__datetime_id__ref_dim_datetime_.409e9f86af: Close
+[0m02:03:55.774436 [info ] [MainThread]: 
+[0m02:03:55.775937 [info ] [MainThread]: Finished running 13 data tests in 0 hours 0 minutes and 7.29 seconds (7.29s).
+[0m02:03:55.779642 [debug] [MainThread]: Command end result
+[0m02:03:55.858220 [debug] [MainThread]: Wrote artifact WritableManifest to /usr/local/airflow/include/dbt/target/manifest.json
+[0m02:03:55.868205 [debug] [MainThread]: Wrote artifact SemanticManifest to /usr/local/airflow/include/dbt/target/semantic_manifest.json
+[0m02:03:55.878835 [debug] [MainThread]: Wrote artifact OsiDocument to /usr/local/airflow/include/dbt/target/osi_document.json
+[0m02:03:55.895810 [debug] [MainThread]: Wrote artifact RunExecutionResult to /usr/local/airflow/include/dbt/target/run_results.json
+[0m02:03:55.897113 [info ] [MainThread]: 
+[0m02:03:55.898630 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m02:03:55.900205 [info ] [MainThread]: 
+[0m02:03:55.901393 [info ] [MainThread]: Done. PASS=13 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=13
+[0m02:03:55.903251 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 14.606487, "process_in_blocks": "1685", "process_kernel_time": 4.348133, "process_mem_max_rss": "314236", "process_out_blocks": "24", "process_user_time": 9.975377}
+[0m02:03:55.905518 [debug] [MainThread]: Command `dbt test` succeeded at 02:03:55.905307 after 14.61 seconds
+[0m02:03:55.907177 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75ec026fb350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75ec024bfee0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75ec024bfa10>]}
+[0m02:03:55.908763 [debug] [MainThread]: Flushing usage events
+[0m02:03:56.024111 [debug] [MainThread]: An error was encountered while trying to flush usage events

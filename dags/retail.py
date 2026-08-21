@@ -4,6 +4,10 @@ from airflow.sdk import dag, task
 from airflow.providers.snowflake.hooks.snowflake import SnowflakeHook
 from airflow.providers.common.sql.operators.sql import SQLExecuteQueryOperator
 from pendulum import datetime
+from cosmos.airflow.task_group import DbtTaskGroup
+from cosmos.config import RenderConfig
+from cosmos.constants import LoadMode
+from include.dbt.cosmos_config import DBT_PROJECT_CONFIG, DBT_CONFIG
 
 # Connection ID configured in Airflow to connect to Snowflake
 SNOWFLAKE_CONN_ID = "snowflake_retail"
@@ -160,10 +164,19 @@ def retail():
                 "or a changed source file.", table_count, expected
             )
 
+    #Task 7: Run Soda Scan to validate data quality and integrity of loaded table
     @task.external_python(python="/usr/local/airflow/soda_venv/bin/python")
     def check_load(scan_name="check_load", checks_subpath="sources"):
         from include.soda.check_function import check
         return check(scan_name, checks_subpath)
+
+    #Task 8: Run dbt transformations to build dimensional models and marts from raw data
+    transform = DbtTaskGroup(
+        group_id="transform",
+        project_config=DBT_PROJECT_CONFIG,
+        profile_config=DBT_CONFIG,
+        render_config=RenderConfig(load_method=LoadMode.DBT_LS, select=["path:models"]),
+    )
 
     # Instantiate task instances
     upload = upload_csv_to_stage()
@@ -172,7 +185,7 @@ def retail():
     check = check_load()
 
     # Define DAG execution dependencies (linear pipeline workflow)
-    upload >> stage_check >> create_raw_table >> truncate_raw_table >> copy_into_raw >> verify >> check
+    upload >> stage_check >> create_raw_table >> truncate_raw_table >> copy_into_raw >> verify >> check >> transform
 
 
 # Register DAG with Airflow runtime

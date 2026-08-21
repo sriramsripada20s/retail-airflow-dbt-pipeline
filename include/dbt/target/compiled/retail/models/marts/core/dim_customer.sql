@@ -3,16 +3,16 @@ with customers as (
     select distinct
         customer_id,
         country
-    from {{ ref('int_retail__invoice_lines') }}
+    from RETAIL.TRANSFORM.int_retail__invoice_lines
     where customer_id is not null
 ),
 
 country as (
-    select * from {{ ref('stg_retail__country') }}
+    select * from RETAIL.TRANSFORM.stg_retail__country
 )
 
 select
-    {{ dbt_utils.generate_surrogate_key(['customers.customer_id', 'customers.country']) }} as customer_key,
+    md5(cast(coalesce(cast(customers.customer_id as TEXT), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(customers.country as TEXT), '_dbt_utils_surrogate_key_null_') as TEXT)) as customer_key,
     customers.customer_id,
     customers.country,
     country.iso

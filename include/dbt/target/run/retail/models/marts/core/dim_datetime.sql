@@ -1,7 +1,15 @@
--- dim_datetime.sql
+
+  
+    
+
+create or replace transient table RETAIL.TRANSFORM.dim_datetime
+    
+    
+    
+    as (-- dim_datetime.sql
 with dates as (
     select distinct invoice_datetime
-    from {{ ref('int_retail__invoice_lines') }}
+    from RETAIL.TRANSFORM.int_retail__invoice_lines
     where invoice_datetime is not null
 )
 
@@ -15,3 +23,8 @@ select
     minute(invoice_datetime)    as minute,
     dayofweek(invoice_datetime) as weekday
 from dates
+    )
+;
+
+
+  
