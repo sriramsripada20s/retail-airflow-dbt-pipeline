@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: retail
+    database: RETAIL
+    schema: RAW
+    tables:
+      - name: raw_invoices
+        columns:
+          - name: InvoiceNo
+            tests:
+              - not_null
+      - name: country

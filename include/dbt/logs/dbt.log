@@ -1,0 +1,844 @@
+[0m01:40:33.167280 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d9082339fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d90841e1bd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d90801379d0>]}
+
+
+============================== 01:40:33.186550 | 89ac2742-2d9e-4ce3-8742-918eb584f537 ==============================
+[0m01:40:33.186550 [info ] [MainThread]: Running with dbt=1.12.2
+[0m01:40:33.188652 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'write_json': 'True', 'log_format': 'default', 'fail_fast': 'False', 'invocation_command': 'dbt deps', 'hints_enabled': 'True', 'printer_width': '80', 'use_experimental_parser': 'False', 'cache_selected_only': 'False', 'log_cache_events': 'False', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'warn_error': 'None', 'log_path': '/usr/local/airflow/include/dbt/logs', 'use_colors': 'True', 'profiles_dir': '/usr/local/airflow/include/dbt', 'partial_parse': 'True', 'debug': 'False', 'quiet': 'False', 'empty': 'None', 'maximum_seed_size_mib': '1', 'static_parser': 'True', 'no_print': 'None'}
+[0m01:40:38.117115 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '89ac2742-2d9e-4ce3-8742-918eb584f537', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d9080e0ab10>]}
+[0m01:40:39.236058 [debug] [MainThread]: Set downloads directory='/tmp/dbt-downloads-qw7vvvd3'
+[0m01:40:39.238676 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m01:40:45.744770 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m01:40:45.763062 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m01:40:45.915656 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m01:40:45.945678 [info ] [MainThread]: Updating lock file in file path: /usr/local/airflow/include/dbt/package-lock.yml
+[0m01:40:45.996363 [debug] [MainThread]: Set downloads directory='/tmp/dbt-downloads-a8_yko_d'
+[0m01:40:46.035853 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m01:40:58.625127 [info ] [MainThread]: Installed from version 1.1.1
+[0m01:40:58.627116 [info ] [MainThread]: Updated version available: 1.4.1
+[0m01:40:58.629593 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '89ac2742-2d9e-4ce3-8742-918eb584f537', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d9080a13350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d9080a13240>]}
+[0m01:40:58.634339 [info ] [MainThread]: 
+[0m01:40:58.638996 [info ] [MainThread]: Updates available for packages: ['dbt-labs/dbt_utils']                 
+Update your versions in packages.yml, then run dbt deps
+[0m01:40:58.645973 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 25.84195, "process_in_blocks": "40002", "process_kernel_time": 20.608004, "process_mem_max_rss": "152036", "process_out_blocks": "200", "process_user_time": 7.567669}
+[0m01:40:58.649776 [debug] [MainThread]: Command `dbt deps` succeeded at 01:40:58.649176 after 25.85 seconds
+[0m01:40:58.653921 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d9080a35e50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d9080c3ae40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d9080e04b90>]}
+[0m01:40:58.657842 [debug] [MainThread]: Flushing usage events
+[0m01:40:58.924861 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m01:41:24.313267 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a3c83379fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a3c85225bd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a3c811df9d0>]}
+
+
+============================== 01:41:24.324389 | 1a72fe2a-3007-4a12-9ab5-bf2d4f5b4cba ==============================
+[0m01:41:24.324389 [info ] [MainThread]: Running with dbt=1.12.2
+[0m01:41:24.326838 [debug] [MainThread]: running dbt with arguments {'log_cache_events': 'False', 'warn_error': 'None', 'hints_enabled': 'True', 'target_path': 'None', 'write_json': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt run --select staging --profiles-dir /usr/local/airflow/include/dbt/', 'use_colors': 'True', 'debug': 'False', 'no_print': 'None', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'static_parser': 'True', 'quiet': 'False', 'cache_selected_only': 'False', 'maximum_seed_size_mib': '1', 'log_format': 'default', 'profiles_dir': '/usr/local/airflow/include/dbt/', 'use_experimental_parser': 'False', 'printer_width': '80', 'empty': 'False', 'log_path': '/usr/local/airflow/include/dbt/logs', 'fail_fast': 'False', 'indirect_selection': 'eager', 'partial_parse': 'True', 'introspect': 'True'}
+[0m01:41:35.656377 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m01:41:35.657999 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m01:41:35.659798 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m01:41:36.000440 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1a72fe2a-3007-4a12-9ab5-bf2d4f5b4cba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a3c5cc6b6f0>]}
+[0m01:41:36.081495 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '1a72fe2a-3007-4a12-9ab5-bf2d4f5b4cba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a3c5cbcb9b0>]}
+[0m01:41:36.091109 [info ] [MainThread]: Registered adapter: snowflake=1.10.5
+[0m01:41:36.310722 [debug] [MainThread]: checksum: cc35750ecde71b865d75821767eaac2efd404a8abed9e099166986ed39d3d5d9, vars: {}, profile: retail, target: dev, version: 1.12.2
+[0m01:41:36.320718 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m01:41:36.324467 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '1a72fe2a-3007-4a12-9ab5-bf2d4f5b4cba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a3c5cbc0b50>]}
+[0m01:41:37.076633 [warn ] [MainThread]: [[33mWARNING[0m][CustomTopLevelKeyDeprecation]: Deprecated functionality
+Unexpected top-level key name in file
+`models/staging/retail/_retail__sources.yml`
+[0m01:41:37.080531 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '1a72fe2a-3007-4a12-9ab5-bf2d4f5b4cba', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a3c5c9596d0>]}
+[0m01:41:37.083132 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Parsing Error
+  The schema file at models/staging/retail/_retail__sources.yml is invalid because the value of 'models' is not a list
+[0m01:41:37.086638 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- CustomTopLevelKeyDeprecation: 2 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m01:41:37.094690 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 12.950426, "process_in_blocks": "1208", "process_kernel_time": 7.83826, "process_mem_max_rss": "249844", "process_out_blocks": "0", "process_user_time": 10.714762}
+[0m01:41:37.101672 [debug] [MainThread]: Command `dbt run` failed at 01:41:37.100510 after 12.96 seconds
+[0m01:41:37.105835 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a3c811502f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a3c5c90f4d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a3c820ea340>]}
+[0m01:41:37.108856 [debug] [MainThread]: Flushing usage events
+[0m01:41:37.337550 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m01:42:53.704287 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dd88b1e1fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dd88d069bd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dd88995b9d0>]}
+
+
+============================== 01:42:53.733097 | 25376ed9-e216-4dd9-88c8-72e8ba39402a ==============================
+[0m01:42:53.733097 [info ] [MainThread]: Running with dbt=1.12.2
+[0m01:42:53.735654 [debug] [MainThread]: running dbt with arguments {'hints_enabled': 'True', 'quiet': 'False', 'use_experimental_parser': 'False', 'introspect': 'True', 'version_check': 'True', 'write_json': 'True', 'partial_parse': 'True', 'log_format': 'default', 'profiles_dir': '/usr/local/airflow/include/dbt/', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'warn_error': 'None', 'indirect_selection': 'eager', 'invocation_command': 'dbt run --select staging --profiles-dir /usr/local/airflow/include/dbt/', 'fail_fast': 'False', 'target_path': 'None', 'log_path': '/usr/local/airflow/include/dbt/logs', 'debug': 'False', 'maximum_seed_size_mib': '1', 'cache_selected_only': 'False', 'static_parser': 'True', 'printer_width': '80', 'no_print': 'None', 'use_colors': 'True', 'empty': 'False', 'log_cache_events': 'False', 'send_anonymous_usage_stats': 'True'}
+[0m01:42:55.505256 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m01:42:55.506858 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m01:42:55.508117 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m01:42:55.773497 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '25376ed9-e216-4dd9-88c8-72e8ba39402a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dd868b136f0>]}
+[0m01:42:55.856250 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '25376ed9-e216-4dd9-88c8-72e8ba39402a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dd868b4b9b0>]}
+[0m01:42:55.859111 [info ] [MainThread]: Registered adapter: snowflake=1.10.5
+[0m01:42:56.134054 [debug] [MainThread]: checksum: cc35750ecde71b865d75821767eaac2efd404a8abed9e099166986ed39d3d5d9, vars: {}, profile: retail, target: dev, version: 1.12.2
+[0m01:42:56.144652 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m01:42:56.146231 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '25376ed9-e216-4dd9-88c8-72e8ba39402a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dd868b40b50>]}
+[0m01:43:00.929073 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '25376ed9-e216-4dd9-88c8-72e8ba39402a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dd8631a2a80>]}
+[0m01:43:01.130029 [debug] [MainThread]: Wrote artifact WritableManifest to /usr/local/airflow/include/dbt/target/manifest.json
+[0m01:43:01.143995 [debug] [MainThread]: Wrote artifact SemanticManifest to /usr/local/airflow/include/dbt/target/semantic_manifest.json
+[0m01:43:01.245739 [debug] [MainThread]: Wrote artifact OsiDocument to /usr/local/airflow/include/dbt/target/osi_document.json
+[0m01:43:01.317449 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '25376ed9-e216-4dd9-88c8-72e8ba39402a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dd8684c6dd0>]}
+[0m01:43:01.319194 [info ] [MainThread]: Found 7 models, 8 data tests, 2 sources, 634 macros
+[0m01:43:01.321642 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '25376ed9-e216-4dd9-88c8-72e8ba39402a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dd862fbac30>]}
+[0m01:43:01.327010 [info ] [MainThread]: 
+[0m01:43:01.329429 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m01:43:01.332830 [info ] [MainThread]: 
+[0m01:43:01.336720 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m01:43:01.350956 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_RETAIL'
+[0m01:43:03.159891 [debug] [ThreadPool]: Using snowflake connection "list_RETAIL"
+[0m01:43:03.161325 [debug] [ThreadPool]: On list_RETAIL: show terse schemas in database RETAIL
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "retail", "target_name": "dev", "connection_name": "list_RETAIL"} */
+[0m01:43:03.162782 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m01:43:06.842165 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 3.679 seconds
+[0m01:43:06.862458 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_RETAIL, now list_RETAIL_TRANSFORM)
+[0m01:43:06.888161 [debug] [ThreadPool]: Using snowflake connection "list_RETAIL_TRANSFORM"
+[0m01:43:06.889892 [debug] [ThreadPool]: On list_RETAIL_TRANSFORM: show objects in RETAIL.TRANSFORM
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "retail", "target_name": "dev", "connection_name": "list_RETAIL_TRANSFORM"} */;
+[0m01:43:07.822096 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.931 seconds
+[0m01:43:07.832423 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '25376ed9-e216-4dd9-88c8-72e8ba39402a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dd862f91fd0>]}
+[0m01:43:07.890538 [debug] [Thread-1 (]: Began running node model.retail.stg_retail__country
+[0m01:43:07.898200 [info ] [Thread-1 (]: 1 of 2 START sql view model TRANSFORM.stg_retail__country ...................... [RUN]
+[0m01:43:07.900010 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_RETAIL_TRANSFORM, now model.retail.stg_retail__country)
+[0m01:43:07.898837 [debug] [Thread-2 (]: Began running node model.retail.stg_retail__invoices
+[0m01:43:07.903023 [info ] [Thread-2 (]: 2 of 2 START sql view model TRANSFORM.stg_retail__invoices ..................... [RUN]
+[0m01:43:07.901506 [debug] [Thread-1 (]: Began compiling node model.retail.stg_retail__country
+[0m01:43:07.904852 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.retail.stg_retail__invoices'
+[0m01:43:07.916080 [debug] [Thread-1 (]: Writing injected SQL for node "model.retail.stg_retail__country"
+[0m01:43:07.918030 [debug] [Thread-2 (]: Began compiling node model.retail.stg_retail__invoices
+[0m01:43:07.922699 [debug] [Thread-2 (]: Writing injected SQL for node "model.retail.stg_retail__invoices"
+[0m01:43:07.964358 [debug] [Thread-1 (]: Began executing node model.retail.stg_retail__country
+[0m01:43:07.978709 [debug] [Thread-2 (]: Began executing node model.retail.stg_retail__invoices
+[0m01:43:08.049785 [debug] [Thread-1 (]: Writing runtime sql for node "model.retail.stg_retail__country"
+[0m01:43:08.045732 [debug] [Thread-2 (]: Writing runtime sql for node "model.retail.stg_retail__invoices"
+[0m01:43:08.080798 [debug] [Thread-2 (]: Using snowflake connection "model.retail.stg_retail__invoices"
+[0m01:43:08.082966 [debug] [Thread-2 (]: On model.retail.stg_retail__invoices: create or replace   view RETAIL.TRANSFORM.stg_retail__invoices
+  
+  
+  
+  
+  as (
+    -- stg_retail__invoices.sql
+-- 1:1 with the raw source: rename to snake_case, cast types, no joins/aggregation.
+
+with source as (
+    select * from RETAIL.RAW.raw_invoices
+),
+
+renamed as (
+    select
+        InvoiceNo::string                                      as invoice_no,
+        StockCode::string                                      as stock_code,
+        Description::string                                    as description,
+        Quantity::integer                                      as quantity,
+        -- As our dataset contains multiple timestamp formats (e.g., 2-digit years mixed with 4-digit years), you can chain TRY_TO_TIMESTAMP with COALESCE
+        COALESCE(
+        TRY_TO_TIMESTAMP(InvoiceDate, 'MM/DD/YY HH24:MI'),
+        TRY_TO_TIMESTAMP(InvoiceDate, 'MM/DD/YYYY HH24:MI'),
+        TRY_TO_TIMESTAMP(InvoiceDate, 'YYYY-MM-DD HH24:MI:SS')
+        ) AS invoice_datetime,
+        UnitPrice::float                                       as unit_price,
+        CustomerID::integer                                    as customer_id,
+        Country::string                                        as country
+    from source
+)
+
+select * from renamed
+  )
+/* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "retail", "target_name": "dev", "node_id": "model.retail.stg_retail__invoices"} */;
+[0m01:43:08.101085 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m01:43:08.105772 [debug] [Thread-1 (]: Using snowflake connection "model.retail.stg_retail__country"
+[0m01:43:08.112340 [debug] [Thread-1 (]: On model.retail.stg_retail__country: create or replace   view RETAIL.TRANSFORM.stg_retail__country
+  
+  
+  
+  
+  as (
+    -- stg_retail__country.sql
+with source as (
+    select * from RETAIL.RAW.country
+),
+
+renamed as (
+    select
+        id::integer         as country_id,
+        iso::string          as iso,
+        name::string         as country_name,
+        nicename::string     as country_nicename,
+        iso3::string         as iso3,
+        numcode::integer     as numcode,
+        phonecode::integer   as phonecode
+    from source
+)
+
+select * from renamed
+  )
+/* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "retail", "target_name": "dev", "node_id": "model.retail.stg_retail__country"} */;
+[0m01:43:08.377206 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01c68727-0001-e78c-0001-83ba0035c132
+[0m01:43:08.378913 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 002003 (42S02): SQL compilation error:
+Object 'RETAIL.RAW.COUNTRY' does not exist or not authorized.
+[0m01:43:08.405746 [debug] [Thread-1 (]: Database Error in model stg_retail__country (models/staging/retail/stg_retail__country.sql)
+  002003 (42S02): SQL compilation error:
+  Object 'RETAIL.RAW.COUNTRY' does not exist or not authorized.
+  compiled code at target/run/retail/models/staging/retail/stg_retail__country.sql
+[0m01:43:08.410365 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '25376ed9-e216-4dd9-88c8-72e8ba39402a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dd88aed7e30>]}
+[0m01:43:08.412371 [error] [Thread-1 (]: 1 of 2 ERROR creating sql view model TRANSFORM.stg_retail__country ............. [[31mERROR[0m in 0.51s]
+[0m01:43:08.414701 [debug] [Thread-1 (]: Finished running node model.retail.stg_retail__country
+[0m01:43:08.416495 [debug] [Thread-7 (]: Marking all children of 'model.retail.stg_retail__country' to be skipped because of status 'error'.  Reason: Database Error in model stg_retail__country (models/staging/retail/stg_retail__country.sql)
+  002003 (42S02): SQL compilation error:
+  Object 'RETAIL.RAW.COUNTRY' does not exist or not authorized.
+  compiled code at target/run/retail/models/staging/retail/stg_retail__country.sql.
+[0m01:43:09.965824 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.865 seconds
+[0m01:43:10.056801 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '25376ed9-e216-4dd9-88c8-72e8ba39402a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dd8621768f0>]}
+[0m01:43:10.058923 [info ] [Thread-2 (]: 2 of 2 OK created sql view model TRANSFORM.stg_retail__invoices ................ [[32mSUCCESS 1[0m in 2.15s]
+[0m01:43:10.060960 [debug] [Thread-2 (]: Finished running node model.retail.stg_retail__invoices
+[0m01:43:10.064562 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m01:43:10.065901 [debug] [MainThread]: Connection 'model.retail.stg_retail__country' was left open.
+[0m01:43:10.067093 [debug] [MainThread]: On model.retail.stg_retail__country: Close
+[0m01:43:10.493615 [debug] [MainThread]: Connection 'model.retail.stg_retail__invoices' was left open.
+[0m01:43:10.495162 [debug] [MainThread]: On model.retail.stg_retail__invoices: Close
+[0m01:43:10.983685 [info ] [MainThread]: 
+[0m01:43:11.021447 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 9.65 seconds (9.65s).
+[0m01:43:11.070881 [debug] [MainThread]: Command end result
+[0m01:43:11.341200 [debug] [MainThread]: Wrote artifact WritableManifest to /usr/local/airflow/include/dbt/target/manifest.json
+[0m01:43:11.372988 [debug] [MainThread]: Wrote artifact SemanticManifest to /usr/local/airflow/include/dbt/target/semantic_manifest.json
+[0m01:43:11.385432 [debug] [MainThread]: Wrote artifact OsiDocument to /usr/local/airflow/include/dbt/target/osi_document.json
+[0m01:43:11.400001 [debug] [MainThread]: Wrote artifact RunExecutionResult to /usr/local/airflow/include/dbt/target/run_results.json
+[0m01:43:11.401350 [info ] [MainThread]: 
+[0m01:43:11.403114 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m01:43:11.404879 [info ] [MainThread]: 
+[0m01:43:11.407281 [error] [MainThread]: [[31mERROR[0m]: in model stg_retail__country (models/staging/retail/stg_retail__country.sql)
+[0m01:43:11.409490 [error] [MainThread]:   Database Error in model stg_retail__country (models/staging/retail/stg_retail__country.sql)
+  002003 (42S02): SQL compilation error:
+  Object 'RETAIL.RAW.COUNTRY' does not exist or not authorized.
+  compiled code at target/run/retail/models/staging/retail/stg_retail__country.sql
+[0m01:43:11.411949 [info ] [MainThread]: 
+[0m01:43:11.413907 [info ] [MainThread]:   compiled code at target/compiled/retail/models/staging/retail/stg_retail__country.sql
+[0m01:43:11.415881 [info ] [MainThread]: 
+[0m01:43:11.417968 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=1 SKIP=0 NO-OP=0 REUSED=0 TOTAL=2
+[0m01:43:11.423266 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 17.88019, "process_in_blocks": "4712", "process_kernel_time": 5.354084, "process_mem_max_rss": "288348", "process_out_blocks": "4912", "process_user_time": 11.567828}
+[0m01:43:11.427598 [debug] [MainThread]: Command `dbt run` failed at 01:43:11.426124 after 17.88 seconds
+[0m01:43:11.431430 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dd862f66c50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dd88cf71b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dd8899207c0>]}
+[0m01:43:11.433742 [debug] [MainThread]: Flushing usage events
+[0m01:43:11.571378 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m01:44:00.054390 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77d14abb1fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77d14ca39bd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77d14932b9d0>]}
+
+
+============================== 01:44:00.059387 | 0a9c95c0-e964-4a9c-be41-e089b52acd68 ==============================
+[0m01:44:00.059387 [info ] [MainThread]: Running with dbt=1.12.2
+[0m01:44:00.061240 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'version_check': 'True', 'invocation_command': 'dbt run --select staging --profiles-dir /usr/local/airflow/include/dbt/', 'debug': 'False', 'log_format': 'default', 'send_anonymous_usage_stats': 'True', 'partial_parse': 'True', 'log_cache_events': 'False', 'use_colors': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'cache_selected_only': 'False', 'empty': 'False', 'printer_width': '80', 'hints_enabled': 'True', 'introspect': 'True', 'profiles_dir': '/usr/local/airflow/include/dbt/', 'use_experimental_parser': 'False', 'warn_error': 'None', 'write_json': 'True', 'maximum_seed_size_mib': '1', 'static_parser': 'True', 'quiet': 'False', 'indirect_selection': 'eager', 'fail_fast': 'False', 'log_path': '/usr/local/airflow/include/dbt/logs', 'target_path': 'None'}
+[0m01:44:02.345891 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m01:44:02.347574 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m01:44:02.348974 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m01:44:02.661876 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0a9c95c0-e964-4a9c-be41-e089b52acd68', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77d1284e36f0>]}
+[0m01:44:02.741117 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0a9c95c0-e964-4a9c-be41-e089b52acd68', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77d1285279b0>]}
+[0m01:44:02.743140 [info ] [MainThread]: Registered adapter: snowflake=1.10.5
+[0m01:44:02.958528 [debug] [MainThread]: checksum: cc35750ecde71b865d75821767eaac2efd404a8abed9e099166986ed39d3d5d9, vars: {}, profile: retail, target: dev, version: 1.12.2
+[0m01:44:05.187905 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m01:44:05.190190 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m01:44:05.192882 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m01:44:05.214527 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0a9c95c0-e964-4a9c-be41-e089b52acd68', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77d123dd1450>]}
+[0m01:44:05.417622 [debug] [MainThread]: Wrote artifact WritableManifest to /usr/local/airflow/include/dbt/target/manifest.json
+[0m01:44:05.427828 [debug] [MainThread]: Wrote artifact SemanticManifest to /usr/local/airflow/include/dbt/target/semantic_manifest.json
+[0m01:44:05.478577 [debug] [MainThread]: Wrote artifact OsiDocument to /usr/local/airflow/include/dbt/target/osi_document.json
+[0m01:44:05.538806 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0a9c95c0-e964-4a9c-be41-e089b52acd68', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77d123cd76b0>]}
+[0m01:44:05.541088 [info ] [MainThread]: Found 7 models, 8 data tests, 2 sources, 634 macros
+[0m01:44:05.543356 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0a9c95c0-e964-4a9c-be41-e089b52acd68', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77d123b210f0>]}
+[0m01:44:05.548279 [info ] [MainThread]: 
+[0m01:44:05.551378 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m01:44:05.555263 [info ] [MainThread]: 
+[0m01:44:05.559458 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m01:44:05.603129 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_RETAIL'
+[0m01:44:05.708263 [debug] [ThreadPool]: Using snowflake connection "list_RETAIL"
+[0m01:44:05.711828 [debug] [ThreadPool]: On list_RETAIL: show terse schemas in database RETAIL
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "retail", "target_name": "dev", "connection_name": "list_RETAIL"} */
+[0m01:44:05.713320 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m01:44:07.430619 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 1.717 seconds
+[0m01:44:07.442283 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_RETAIL, now list_RETAIL_TRANSFORM)
+[0m01:44:07.455302 [debug] [ThreadPool]: Using snowflake connection "list_RETAIL_TRANSFORM"
+[0m01:44:07.456483 [debug] [ThreadPool]: On list_RETAIL_TRANSFORM: show objects in RETAIL.TRANSFORM
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "retail", "target_name": "dev", "connection_name": "list_RETAIL_TRANSFORM"} */;
+[0m01:44:08.226597 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.769 seconds
+[0m01:44:08.230271 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0a9c95c0-e964-4a9c-be41-e089b52acd68', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77d122ef3110>]}
+[0m01:44:08.251242 [debug] [Thread-1 (]: Began running node model.retail.stg_retail__country
+[0m01:44:08.251908 [debug] [Thread-2 (]: Began running node model.retail.stg_retail__invoices
+[0m01:44:08.252953 [info ] [Thread-1 (]: 1 of 2 START sql view model TRANSFORM.stg_retail__country ...................... [RUN]
+[0m01:44:08.255265 [info ] [Thread-2 (]: 2 of 2 START sql view model TRANSFORM.stg_retail__invoices ..................... [RUN]
+[0m01:44:08.258341 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_RETAIL_TRANSFORM, now model.retail.stg_retail__country)
+[0m01:44:08.260588 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.retail.stg_retail__invoices'
+[0m01:44:08.263354 [debug] [Thread-1 (]: Began compiling node model.retail.stg_retail__country
+[0m01:44:08.266254 [debug] [Thread-2 (]: Began compiling node model.retail.stg_retail__invoices
+[0m01:44:08.281426 [debug] [Thread-1 (]: Writing injected SQL for node "model.retail.stg_retail__country"
+[0m01:44:08.308488 [debug] [Thread-2 (]: Writing injected SQL for node "model.retail.stg_retail__invoices"
+[0m01:44:08.336998 [debug] [Thread-2 (]: Began executing node model.retail.stg_retail__invoices
+[0m01:44:08.345399 [debug] [Thread-1 (]: Began executing node model.retail.stg_retail__country
+[0m01:44:08.407841 [debug] [Thread-1 (]: Writing runtime sql for node "model.retail.stg_retail__country"
+[0m01:44:08.408925 [debug] [Thread-2 (]: Writing runtime sql for node "model.retail.stg_retail__invoices"
+[0m01:44:08.423807 [debug] [Thread-1 (]: Using snowflake connection "model.retail.stg_retail__country"
+[0m01:44:08.426098 [debug] [Thread-1 (]: On model.retail.stg_retail__country: create or replace   view RETAIL.TRANSFORM.stg_retail__country
+  
+  
+  
+  
+  as (
+    -- stg_retail__country.sql
+with source as (
+    select * from RETAIL.RAW.country
+),
+
+renamed as (
+    select
+        id::integer         as country_id,
+        iso::string          as iso,
+        name::string         as country_name,
+        nicename::string     as country_nicename,
+        iso3::string         as iso3,
+        numcode::integer     as numcode,
+        phonecode::integer   as phonecode
+    from source
+)
+
+select * from renamed
+  )
+/* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "retail", "target_name": "dev", "node_id": "model.retail.stg_retail__country"} */;
+[0m01:44:08.425467 [debug] [Thread-2 (]: Using snowflake connection "model.retail.stg_retail__invoices"
+[0m01:44:08.428796 [debug] [Thread-2 (]: On model.retail.stg_retail__invoices: create or replace   view RETAIL.TRANSFORM.stg_retail__invoices
+  
+  
+  
+  
+  as (
+    -- stg_retail__invoices.sql
+-- 1:1 with the raw source: rename to snake_case, cast types, no joins/aggregation.
+
+with source as (
+    select * from RETAIL.RAW.raw_invoices
+),
+
+renamed as (
+    select
+        InvoiceNo::string                                      as invoice_no,
+        StockCode::string                                      as stock_code,
+        Description::string                                    as description,
+        Quantity::integer                                      as quantity,
+        -- As our dataset contains multiple timestamp formats (e.g., 2-digit years mixed with 4-digit years), you can chain TRY_TO_TIMESTAMP with COALESCE
+        COALESCE(
+        TRY_TO_TIMESTAMP(InvoiceDate, 'MM/DD/YY HH24:MI'),
+        TRY_TO_TIMESTAMP(InvoiceDate, 'MM/DD/YYYY HH24:MI'),
+        TRY_TO_TIMESTAMP(InvoiceDate, 'YYYY-MM-DD HH24:MI:SS')
+        ) AS invoice_datetime,
+        UnitPrice::float                                       as unit_price,
+        CustomerID::integer                                    as customer_id,
+        Country::string                                        as country
+    from source
+)
+
+select * from renamed
+  )
+/* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "retail", "target_name": "dev", "node_id": "model.retail.stg_retail__invoices"} */;
+[0m01:44:08.430249 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m01:44:08.669843 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01c68728-0001-e78c-0001-83ba0035c156
+[0m01:44:08.671715 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 002003 (42S02): SQL compilation error:
+Object 'RETAIL.RAW.COUNTRY' does not exist or not authorized.
+[0m01:44:08.683962 [debug] [Thread-1 (]: Database Error in model stg_retail__country (models/staging/retail/stg_retail__country.sql)
+  002003 (42S02): SQL compilation error:
+  Object 'RETAIL.RAW.COUNTRY' does not exist or not authorized.
+  compiled code at target/run/retail/models/staging/retail/stg_retail__country.sql
+[0m01:44:08.687308 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0a9c95c0-e964-4a9c-be41-e089b52acd68', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77d122d8a8d0>]}
+[0m01:44:08.688828 [error] [Thread-1 (]: 1 of 2 ERROR creating sql view model TRANSFORM.stg_retail__country ............. [[31mERROR[0m in 0.43s]
+[0m01:44:08.690546 [debug] [Thread-1 (]: Finished running node model.retail.stg_retail__country
+[0m01:44:08.692451 [debug] [Thread-7 (]: Marking all children of 'model.retail.stg_retail__country' to be skipped because of status 'error'.  Reason: Database Error in model stg_retail__country (models/staging/retail/stg_retail__country.sql)
+  002003 (42S02): SQL compilation error:
+  Object 'RETAIL.RAW.COUNTRY' does not exist or not authorized.
+  compiled code at target/run/retail/models/staging/retail/stg_retail__country.sql.
+[0m01:44:09.709821 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.279 seconds
+[0m01:44:09.746559 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0a9c95c0-e964-4a9c-be41-e089b52acd68', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77d122c88ec0>]}
+[0m01:44:09.748754 [info ] [Thread-2 (]: 2 of 2 OK created sql view model TRANSFORM.stg_retail__invoices ................ [[32mSUCCESS 1[0m in 1.49s]
+[0m01:44:09.751088 [debug] [Thread-2 (]: Finished running node model.retail.stg_retail__invoices
+[0m01:44:09.755117 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m01:44:09.756693 [debug] [MainThread]: Connection 'model.retail.stg_retail__country' was left open.
+[0m01:44:09.758350 [debug] [MainThread]: On model.retail.stg_retail__country: Close
+[0m01:44:10.238611 [debug] [MainThread]: Connection 'model.retail.stg_retail__invoices' was left open.
+[0m01:44:10.240689 [debug] [MainThread]: On model.retail.stg_retail__invoices: Close
+[0m01:44:10.682063 [info ] [MainThread]: 
+[0m01:44:10.699132 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 5.12 seconds (5.12s).
+[0m01:44:10.716162 [debug] [MainThread]: Command end result
+[0m01:44:11.043020 [debug] [MainThread]: Wrote artifact WritableManifest to /usr/local/airflow/include/dbt/target/manifest.json
+[0m01:44:11.076134 [debug] [MainThread]: Wrote artifact SemanticManifest to /usr/local/airflow/include/dbt/target/semantic_manifest.json
+[0m01:44:11.109215 [debug] [MainThread]: Wrote artifact OsiDocument to /usr/local/airflow/include/dbt/target/osi_document.json
+[0m01:44:11.159083 [debug] [MainThread]: Wrote artifact RunExecutionResult to /usr/local/airflow/include/dbt/target/run_results.json
+[0m01:44:11.162680 [info ] [MainThread]: 
+[0m01:44:11.169364 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m01:44:11.173189 [info ] [MainThread]: 
+[0m01:44:11.177209 [error] [MainThread]: [[31mERROR[0m]: in model stg_retail__country (models/staging/retail/stg_retail__country.sql)
+[0m01:44:11.181422 [error] [MainThread]:   Database Error in model stg_retail__country (models/staging/retail/stg_retail__country.sql)
+  002003 (42S02): SQL compilation error:
+  Object 'RETAIL.RAW.COUNTRY' does not exist or not authorized.
+  compiled code at target/run/retail/models/staging/retail/stg_retail__country.sql
+[0m01:44:11.188965 [info ] [MainThread]: 
+[0m01:44:11.192163 [info ] [MainThread]:   compiled code at target/compiled/retail/models/staging/retail/stg_retail__country.sql
+[0m01:44:11.197717 [info ] [MainThread]: 
+[0m01:44:11.202605 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=1 SKIP=0 NO-OP=0 REUSED=0 TOTAL=2
+[0m01:44:11.206670 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 11.333623, "process_in_blocks": "1622", "process_kernel_time": 3.162217, "process_mem_max_rss": "279720", "process_out_blocks": "24", "process_user_time": 8.566582}
+[0m01:44:11.210340 [debug] [MainThread]: Command `dbt run` failed at 01:44:11.208935 after 11.34 seconds
+[0m01:44:11.216181 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77d122da34d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77d1230fb650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77d123c8ead0>]}
+[0m01:44:11.218631 [debug] [MainThread]: Flushing usage events
+[0m01:44:11.413301 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m01:47:32.421681 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x754ae5281fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x754ae7109bd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x754ae39fb9d0>]}
+
+
+============================== 01:47:32.452663 | 0b2583a4-6de7-4088-936f-fc8a76d86a97 ==============================
+[0m01:47:32.452663 [info ] [MainThread]: Running with dbt=1.12.2
+[0m01:47:32.455627 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'target_path': 'None', 'log_cache_events': 'False', 'profiles_dir': '/usr/local/airflow/include/dbt/', 'write_json': 'True', 'no_print': 'None', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'quiet': 'False', 'invocation_command': 'dbt run --select stg_retail__country --profiles-dir /usr/local/airflow/include/dbt/', 'maximum_seed_size_mib': '1', 'indirect_selection': 'eager', 'fail_fast': 'False', 'debug': 'False', 'use_experimental_parser': 'False', 'static_parser': 'True', 'empty': 'False', 'log_path': '/usr/local/airflow/include/dbt/logs', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'warn_error': 'None', 'log_format': 'default', 'cache_selected_only': 'False', 'printer_width': '80', 'partial_parse': 'True', 'hints_enabled': 'True'}
+[0m01:47:40.254091 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m01:47:40.257192 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m01:47:40.259059 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m01:47:41.100227 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0b2583a4-6de7-4088-936f-fc8a76d86a97', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x754abec6b6f0>]}
+[0m01:47:41.353220 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0b2583a4-6de7-4088-936f-fc8a76d86a97', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x754abeb679b0>]}
+[0m01:47:41.358932 [info ] [MainThread]: Registered adapter: snowflake=1.10.5
+[0m01:47:44.017466 [debug] [MainThread]: checksum: cc35750ecde71b865d75821767eaac2efd404a8abed9e099166986ed39d3d5d9, vars: {}, profile: retail, target: dev, version: 1.12.2
+[0m01:47:47.549857 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m01:47:47.552821 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m01:47:47.555916 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m01:47:47.592909 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0b2583a4-6de7-4088-936f-fc8a76d86a97', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x754abe4f1450>]}
+[0m01:47:48.359966 [debug] [MainThread]: Wrote artifact WritableManifest to /usr/local/airflow/include/dbt/target/manifest.json
+[0m01:47:48.380477 [debug] [MainThread]: Wrote artifact SemanticManifest to /usr/local/airflow/include/dbt/target/semantic_manifest.json
+[0m01:47:48.543198 [debug] [MainThread]: Wrote artifact OsiDocument to /usr/local/airflow/include/dbt/target/osi_document.json
+[0m01:47:48.697370 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0b2583a4-6de7-4088-936f-fc8a76d86a97', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x754abe5836b0>]}
+[0m01:47:48.700078 [info ] [MainThread]: Found 7 models, 8 data tests, 2 sources, 634 macros
+[0m01:47:48.702963 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0b2583a4-6de7-4088-936f-fc8a76d86a97', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x754abe43d0f0>]}
+[0m01:47:48.713813 [info ] [MainThread]: 
+[0m01:47:48.717408 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m01:47:48.721231 [info ] [MainThread]: 
+[0m01:47:48.725164 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m01:47:48.740180 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_RETAIL'
+[0m01:47:49.446080 [debug] [ThreadPool]: Using snowflake connection "list_RETAIL"
+[0m01:47:49.447643 [debug] [ThreadPool]: On list_RETAIL: show terse schemas in database RETAIL
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "retail", "target_name": "dev", "connection_name": "list_RETAIL"} */
+[0m01:47:49.449559 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m01:47:52.469120 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 3.019 seconds
+[0m01:47:52.550234 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_RETAIL, now list_RETAIL_TRANSFORM)
+[0m01:47:52.607692 [debug] [ThreadPool]: Using snowflake connection "list_RETAIL_TRANSFORM"
+[0m01:47:52.613041 [debug] [ThreadPool]: On list_RETAIL_TRANSFORM: show objects in RETAIL.TRANSFORM
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "retail", "target_name": "dev", "connection_name": "list_RETAIL_TRANSFORM"} */;
+[0m01:47:53.015518 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.396 seconds
+[0m01:47:53.033242 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0b2583a4-6de7-4088-936f-fc8a76d86a97', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x754abd6431e0>]}
+[0m01:47:53.070937 [debug] [Thread-1 (]: Began running node model.retail.stg_retail__country
+[0m01:47:53.074069 [info ] [Thread-1 (]: 1 of 1 START sql view model TRANSFORM.stg_retail__country ...................... [RUN]
+[0m01:47:53.076401 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_RETAIL_TRANSFORM, now model.retail.stg_retail__country)
+[0m01:47:53.078148 [debug] [Thread-1 (]: Began compiling node model.retail.stg_retail__country
+[0m01:47:53.086771 [debug] [Thread-1 (]: Writing injected SQL for node "model.retail.stg_retail__country"
+[0m01:47:53.100215 [debug] [Thread-1 (]: Began executing node model.retail.stg_retail__country
+[0m01:47:53.133821 [debug] [Thread-1 (]: Writing runtime sql for node "model.retail.stg_retail__country"
+[0m01:47:53.152114 [debug] [Thread-1 (]: Using snowflake connection "model.retail.stg_retail__country"
+[0m01:47:53.154050 [debug] [Thread-1 (]: On model.retail.stg_retail__country: create or replace   view RETAIL.TRANSFORM.stg_retail__country
+  
+  
+  
+  
+  as (
+    -- stg_retail__country.sql
+with source as (
+    select * from RETAIL.RAW.country
+),
+
+renamed as (
+    select
+        id::integer         as country_id,
+        iso::string          as iso,
+        name::string         as country_name,
+        nicename::string     as country_nicename,
+        iso3::string         as iso3,
+        numcode::integer     as numcode,
+        phonecode::integer   as phonecode
+    from source
+)
+
+select * from renamed
+  )
+/* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "retail", "target_name": "dev", "node_id": "model.retail.stg_retail__country"} */;
+[0m01:47:53.555457 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.399 seconds
+[0m01:47:53.593996 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0b2583a4-6de7-4088-936f-fc8a76d86a97', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x754abd61ee10>]}
+[0m01:47:53.595995 [info ] [Thread-1 (]: 1 of 1 OK created sql view model TRANSFORM.stg_retail__country ................. [[32mSUCCESS 1[0m in 0.51s]
+[0m01:47:53.598430 [debug] [Thread-1 (]: Finished running node model.retail.stg_retail__country
+[0m01:47:53.605305 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m01:47:53.607942 [debug] [MainThread]: Connection 'model.retail.stg_retail__country' was left open.
+[0m01:47:53.609561 [debug] [MainThread]: On model.retail.stg_retail__country: Close
+[0m01:47:54.056815 [info ] [MainThread]: 
+[0m01:47:54.058821 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 5.33 seconds (5.33s).
+[0m01:47:54.061783 [debug] [MainThread]: Command end result
+[0m01:47:54.157757 [debug] [MainThread]: Wrote artifact WritableManifest to /usr/local/airflow/include/dbt/target/manifest.json
+[0m01:47:54.171583 [debug] [MainThread]: Wrote artifact SemanticManifest to /usr/local/airflow/include/dbt/target/semantic_manifest.json
+[0m01:47:54.183782 [debug] [MainThread]: Wrote artifact OsiDocument to /usr/local/airflow/include/dbt/target/osi_document.json
+[0m01:47:54.201837 [debug] [MainThread]: Wrote artifact RunExecutionResult to /usr/local/airflow/include/dbt/target/run_results.json
+[0m01:47:54.203482 [info ] [MainThread]: 
+[0m01:47:54.205564 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m01:47:54.207563 [info ] [MainThread]: 
+[0m01:47:54.209587 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=1
+[0m01:47:54.212606 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 22.108099, "process_in_blocks": "1614", "process_kernel_time": 13.96913, "process_mem_max_rss": "276612", "process_out_blocks": "24", "process_user_time": 16.744991}
+[0m01:47:54.214265 [debug] [MainThread]: Command `dbt run` succeeded at 01:47:54.213972 after 22.11 seconds
+[0m01:47:54.215658 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x754abd7eedb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x754abea21bd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x754abea21950>]}
+[0m01:47:54.217027 [debug] [MainThread]: Flushing usage events
+[0m01:47:54.466990 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m01:48:12.074634 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7daba17ddfd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7daba36a1bd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7daba01eb9d0>]}
+
+
+============================== 01:48:12.080635 | 7dd1d290-ec81-4f32-8d02-9b2bb1ca5238 ==============================
+[0m01:48:12.080635 [info ] [MainThread]: Running with dbt=1.12.2
+[0m01:48:12.082753 [debug] [MainThread]: running dbt with arguments {'use_experimental_parser': 'False', 'hints_enabled': 'True', 'partial_parse': 'True', 'quiet': 'False', 'debug': 'False', 'no_print': 'None', 'write_json': 'True', 'version_check': 'True', 'static_parser': 'True', 'maximum_seed_size_mib': '1', 'introspect': 'True', 'log_cache_events': 'False', 'log_format': 'default', 'profiles_dir': '/usr/local/airflow/include/dbt/', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'printer_width': '80', 'invocation_command': 'dbt test --select staging --profiles-dir /usr/local/airflow/include/dbt/', 'warn_error': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_path': '/usr/local/airflow/include/dbt/logs', 'cache_selected_only': 'False', 'empty': 'None', 'target_path': 'None', 'fail_fast': 'False', 'use_colors': 'True'}
+[0m01:48:16.858765 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m01:48:16.860224 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m01:48:16.862610 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m01:48:17.335244 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7dd1d290-ec81-4f32-8d02-9b2bb1ca5238', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dab7b0636f0>]}
+[0m01:48:17.432457 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '7dd1d290-ec81-4f32-8d02-9b2bb1ca5238', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dab7b0b39b0>]}
+[0m01:48:17.435388 [info ] [MainThread]: Registered adapter: snowflake=1.10.5
+[0m01:48:17.734577 [debug] [MainThread]: checksum: cc35750ecde71b865d75821767eaac2efd404a8abed9e099166986ed39d3d5d9, vars: {}, profile: retail, target: dev, version: 1.12.2
+[0m01:48:20.038225 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m01:48:20.039343 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m01:48:20.046772 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m01:48:20.060433 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '7dd1d290-ec81-4f32-8d02-9b2bb1ca5238', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dab7aaa5450>]}
+[0m01:48:20.275045 [debug] [MainThread]: Wrote artifact WritableManifest to /usr/local/airflow/include/dbt/target/manifest.json
+[0m01:48:20.284836 [debug] [MainThread]: Wrote artifact SemanticManifest to /usr/local/airflow/include/dbt/target/semantic_manifest.json
+[0m01:48:20.327650 [debug] [MainThread]: Wrote artifact OsiDocument to /usr/local/airflow/include/dbt/target/osi_document.json
+[0m01:48:20.830741 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '7dd1d290-ec81-4f32-8d02-9b2bb1ca5238', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dab7abf1a90>]}
+[0m01:48:20.833368 [info ] [MainThread]: Found 7 models, 8 data tests, 2 sources, 634 macros
+[0m01:48:20.837016 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7dd1d290-ec81-4f32-8d02-9b2bb1ca5238', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dab7a722270>]}
+[0m01:48:20.877636 [info ] [MainThread]: 
+[0m01:48:20.884826 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m01:48:20.887796 [info ] [MainThread]: 
+[0m01:48:20.891990 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m01:48:20.916900 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_RETAIL_TRANSFORM'
+[0m01:48:20.984927 [debug] [ThreadPool]: Using snowflake connection "list_RETAIL_TRANSFORM"
+[0m01:48:20.986092 [debug] [ThreadPool]: On list_RETAIL_TRANSFORM: show objects in RETAIL.TRANSFORM
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "retail", "target_name": "dev", "connection_name": "list_RETAIL_TRANSFORM"} */;
+[0m01:48:20.987015 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m01:48:23.364656 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 2.378 seconds
+[0m01:48:23.370606 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7dd1d290-ec81-4f32-8d02-9b2bb1ca5238', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dab7a4ec7a0>]}
+[0m01:48:23.397967 [debug] [Thread-1 (]: Began running node test.retail.not_null_stg_retail__country_country_id.62112acc14
+[0m01:48:23.398656 [debug] [Thread-2 (]: Began running node test.retail.not_null_stg_retail__country_country_name.01607e07a7
+[0m01:48:23.402240 [debug] [Thread-4 (]: Began running node test.retail.not_null_stg_retail__invoices_quantity.89522649ed
+[0m01:48:23.405497 [info ] [Thread-1 (]: 1 of 8 START test not_null_stg_retail__country_country_id ...................... [RUN]
+[0m01:48:23.406294 [debug] [Thread-3 (]: Began running node test.retail.not_null_stg_retail__invoices_invoice_no.904176d2f8
+[0m01:48:23.407774 [info ] [Thread-2 (]: 2 of 8 START test not_null_stg_retail__country_country_name .................... [RUN]
+[0m01:48:23.409327 [info ] [Thread-4 (]: 4 of 8 START test not_null_stg_retail__invoices_quantity ....................... [RUN]
+[0m01:48:23.411560 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_RETAIL_TRANSFORM, now test.retail.not_null_stg_retail__country_country_id.62112acc14)
+[0m01:48:23.413029 [info ] [Thread-3 (]: 3 of 8 START test not_null_stg_retail__invoices_invoice_no ..................... [RUN]
+[0m01:48:23.414715 [debug] [Thread-2 (]: Acquiring new snowflake connection 'test.retail.not_null_stg_retail__country_country_name.01607e07a7'
+[0m01:48:23.417146 [debug] [Thread-4 (]: Acquiring new snowflake connection 'test.retail.not_null_stg_retail__invoices_quantity.89522649ed'
+[0m01:48:23.419325 [debug] [Thread-1 (]: Began compiling node test.retail.not_null_stg_retail__country_country_id.62112acc14
+[0m01:48:23.421805 [debug] [Thread-3 (]: Acquiring new snowflake connection 'test.retail.not_null_stg_retail__invoices_invoice_no.904176d2f8'
+[0m01:48:23.424639 [debug] [Thread-2 (]: Began compiling node test.retail.not_null_stg_retail__country_country_name.01607e07a7
+[0m01:48:23.427099 [debug] [Thread-4 (]: Began compiling node test.retail.not_null_stg_retail__invoices_quantity.89522649ed
+[0m01:48:23.440398 [debug] [Thread-3 (]: Began compiling node test.retail.not_null_stg_retail__invoices_invoice_no.904176d2f8
+[0m01:48:23.467491 [debug] [Thread-1 (]: Writing injected SQL for node "test.retail.not_null_stg_retail__country_country_id.62112acc14"
+[0m01:48:23.470013 [debug] [Thread-2 (]: Writing injected SQL for node "test.retail.not_null_stg_retail__country_country_name.01607e07a7"
+[0m01:48:23.479278 [debug] [Thread-4 (]: Writing injected SQL for node "test.retail.not_null_stg_retail__invoices_quantity.89522649ed"
+[0m01:48:23.487736 [debug] [Thread-3 (]: Writing injected SQL for node "test.retail.not_null_stg_retail__invoices_invoice_no.904176d2f8"
+[0m01:48:23.504265 [debug] [Thread-3 (]: Began executing node test.retail.not_null_stg_retail__invoices_invoice_no.904176d2f8
+[0m01:48:23.528719 [debug] [Thread-2 (]: Began executing node test.retail.not_null_stg_retail__country_country_name.01607e07a7
+[0m01:48:23.546896 [debug] [Thread-4 (]: Began executing node test.retail.not_null_stg_retail__invoices_quantity.89522649ed
+[0m01:48:23.548013 [debug] [Thread-1 (]: Began executing node test.retail.not_null_stg_retail__country_country_id.62112acc14
+[0m01:48:23.549461 [debug] [Thread-3 (]: Writing runtime sql for node "test.retail.not_null_stg_retail__invoices_invoice_no.904176d2f8"
+[0m01:48:23.553504 [debug] [Thread-2 (]: Writing runtime sql for node "test.retail.not_null_stg_retail__country_country_name.01607e07a7"
+[0m01:48:23.557420 [debug] [Thread-4 (]: Writing runtime sql for node "test.retail.not_null_stg_retail__invoices_quantity.89522649ed"
+[0m01:48:23.562672 [debug] [Thread-1 (]: Writing runtime sql for node "test.retail.not_null_stg_retail__country_country_id.62112acc14"
+[0m01:48:23.586175 [debug] [Thread-3 (]: Using snowflake connection "test.retail.not_null_stg_retail__invoices_invoice_no.904176d2f8"
+[0m01:48:23.588190 [debug] [Thread-3 (]: On test.retail.not_null_stg_retail__invoices_invoice_no.904176d2f8: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select invoice_no
+from RETAIL.TRANSFORM.stg_retail__invoices
+where invoice_no is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "retail", "target_name": "dev", "node_id": "test.retail.not_null_stg_retail__invoices_invoice_no.904176d2f8"} */
+[0m01:48:23.592147 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m01:48:23.591153 [debug] [Thread-1 (]: Using snowflake connection "test.retail.not_null_stg_retail__country_country_id.62112acc14"
+[0m01:48:23.599099 [debug] [Thread-1 (]: On test.retail.not_null_stg_retail__country_country_id.62112acc14: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select country_id
+from RETAIL.TRANSFORM.stg_retail__country
+where country_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "retail", "target_name": "dev", "node_id": "test.retail.not_null_stg_retail__country_country_id.62112acc14"} */
+[0m01:48:23.598230 [debug] [Thread-2 (]: Using snowflake connection "test.retail.not_null_stg_retail__country_country_name.01607e07a7"
+[0m01:48:23.607113 [debug] [Thread-2 (]: On test.retail.not_null_stg_retail__country_country_name.01607e07a7: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select country_name
+from RETAIL.TRANSFORM.stg_retail__country
+where country_name is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "retail", "target_name": "dev", "node_id": "test.retail.not_null_stg_retail__country_country_name.01607e07a7"} */
+[0m01:48:23.605664 [debug] [Thread-4 (]: Using snowflake connection "test.retail.not_null_stg_retail__invoices_quantity.89522649ed"
+[0m01:48:23.610111 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m01:48:23.613693 [debug] [Thread-4 (]: On test.retail.not_null_stg_retail__invoices_quantity.89522649ed: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select quantity
+from RETAIL.TRANSFORM.stg_retail__invoices
+where quantity is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "retail", "target_name": "dev", "node_id": "test.retail.not_null_stg_retail__invoices_quantity.89522649ed"} */
+[0m01:48:23.632105 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m01:48:24.410761 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.808 seconds
+[0m01:48:24.468409 [info ] [Thread-1 (]: 1 of 8 PASS not_null_stg_retail__country_country_id ............................ [[32mPASS[0m in 1.06s]
+[0m01:48:24.484533 [debug] [Thread-1 (]: Finished running node test.retail.not_null_stg_retail__country_country_id.62112acc14
+[0m01:48:24.492725 [debug] [Thread-1 (]: Began running node test.retail.not_null_stg_retail__invoices_unit_price.34a2398ed9
+[0m01:48:24.495861 [info ] [Thread-1 (]: 5 of 8 START test not_null_stg_retail__invoices_unit_price ..................... [RUN]
+[0m01:48:24.498557 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.retail.not_null_stg_retail__country_country_id.62112acc14, now test.retail.not_null_stg_retail__invoices_unit_price.34a2398ed9)
+[0m01:48:24.501169 [debug] [Thread-1 (]: Began compiling node test.retail.not_null_stg_retail__invoices_unit_price.34a2398ed9
+[0m01:48:24.542278 [debug] [Thread-1 (]: Writing injected SQL for node "test.retail.not_null_stg_retail__invoices_unit_price.34a2398ed9"
+[0m01:48:24.583162 [debug] [Thread-1 (]: Began executing node test.retail.not_null_stg_retail__invoices_unit_price.34a2398ed9
+[0m01:48:24.589978 [debug] [Thread-1 (]: Writing runtime sql for node "test.retail.not_null_stg_retail__invoices_unit_price.34a2398ed9"
+[0m01:48:24.613220 [debug] [Thread-1 (]: Using snowflake connection "test.retail.not_null_stg_retail__invoices_unit_price.34a2398ed9"
+[0m01:48:24.615572 [debug] [Thread-1 (]: On test.retail.not_null_stg_retail__invoices_unit_price.34a2398ed9: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select unit_price
+from RETAIL.TRANSFORM.stg_retail__invoices
+where unit_price is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "retail", "target_name": "dev", "node_id": "test.retail.not_null_stg_retail__invoices_unit_price.34a2398ed9"} */
+[0m01:48:25.049795 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.432 seconds
+[0m01:48:25.068416 [info ] [Thread-1 (]: 5 of 8 PASS not_null_stg_retail__invoices_unit_price ........................... [[32mPASS[0m in 0.57s]
+[0m01:48:25.079244 [debug] [Thread-1 (]: Finished running node test.retail.not_null_stg_retail__invoices_unit_price.34a2398ed9
+[0m01:48:25.084335 [debug] [Thread-1 (]: Began running node test.retail.source_not_null_retail_raw_invoices_InvoiceNo.865435d0ed
+[0m01:48:25.087195 [info ] [Thread-1 (]: 6 of 8 START test source_not_null_retail_raw_invoices_InvoiceNo ................ [RUN]
+[0m01:48:25.090728 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.retail.not_null_stg_retail__invoices_unit_price.34a2398ed9, now test.retail.source_not_null_retail_raw_invoices_InvoiceNo.865435d0ed)
+[0m01:48:25.094507 [debug] [Thread-1 (]: Began compiling node test.retail.source_not_null_retail_raw_invoices_InvoiceNo.865435d0ed
+[0m01:48:25.112472 [debug] [Thread-1 (]: Writing injected SQL for node "test.retail.source_not_null_retail_raw_invoices_InvoiceNo.865435d0ed"
+[0m01:48:25.136640 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 1.544 seconds
+[0m01:48:25.147124 [info ] [Thread-3 (]: 3 of 8 PASS not_null_stg_retail__invoices_invoice_no ........................... [[32mPASS[0m in 1.73s]
+[0m01:48:25.150596 [debug] [Thread-3 (]: Finished running node test.retail.not_null_stg_retail__invoices_invoice_no.904176d2f8
+[0m01:48:25.152896 [debug] [Thread-3 (]: Began running node test.retail.unique_stg_retail__country_country_id.ff999fd7c7
+[0m01:48:25.157936 [info ] [Thread-3 (]: 7 of 8 START test unique_stg_retail__country_country_id ........................ [RUN]
+[0m01:48:25.166591 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.retail.not_null_stg_retail__invoices_invoice_no.904176d2f8, now test.retail.unique_stg_retail__country_country_id.ff999fd7c7)
+[0m01:48:25.169129 [debug] [Thread-3 (]: Began compiling node test.retail.unique_stg_retail__country_country_id.ff999fd7c7
+[0m01:48:25.187832 [debug] [Thread-1 (]: Began executing node test.retail.source_not_null_retail_raw_invoices_InvoiceNo.865435d0ed
+[0m01:48:25.198263 [debug] [Thread-1 (]: Writing runtime sql for node "test.retail.source_not_null_retail_raw_invoices_InvoiceNo.865435d0ed"
+[0m01:48:25.202374 [debug] [Thread-3 (]: Writing injected SQL for node "test.retail.unique_stg_retail__country_country_id.ff999fd7c7"
+[0m01:48:25.203558 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 1.572 seconds
+[0m01:48:25.212488 [info ] [Thread-4 (]: 4 of 8 PASS not_null_stg_retail__invoices_quantity ............................. [[32mPASS[0m in 1.80s]
+[0m01:48:25.218862 [debug] [Thread-4 (]: Finished running node test.retail.not_null_stg_retail__invoices_quantity.89522649ed
+[0m01:48:25.221483 [debug] [Thread-4 (]: Began running node test.retail.unique_stg_retail__country_country_name.0e3ba116f7
+[0m01:48:25.224364 [info ] [Thread-4 (]: 8 of 8 START test unique_stg_retail__country_country_name ...................... [RUN]
+[0m01:48:25.229328 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.retail.not_null_stg_retail__invoices_quantity.89522649ed, now test.retail.unique_stg_retail__country_country_name.0e3ba116f7)
+[0m01:48:25.233495 [debug] [Thread-4 (]: Began compiling node test.retail.unique_stg_retail__country_country_name.0e3ba116f7
+[0m01:48:25.247497 [debug] [Thread-4 (]: Writing injected SQL for node "test.retail.unique_stg_retail__country_country_name.0e3ba116f7"
+[0m01:48:25.253391 [debug] [Thread-3 (]: Began executing node test.retail.unique_stg_retail__country_country_id.ff999fd7c7
+[0m01:48:25.258895 [debug] [Thread-3 (]: Writing runtime sql for node "test.retail.unique_stg_retail__country_country_id.ff999fd7c7"
+[0m01:48:25.264018 [debug] [Thread-1 (]: Using snowflake connection "test.retail.source_not_null_retail_raw_invoices_InvoiceNo.865435d0ed"
+[0m01:48:25.265749 [debug] [Thread-1 (]: On test.retail.source_not_null_retail_raw_invoices_InvoiceNo.865435d0ed: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select InvoiceNo
+from RETAIL.RAW.raw_invoices
+where InvoiceNo is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "retail", "target_name": "dev", "node_id": "test.retail.source_not_null_retail_raw_invoices_InvoiceNo.865435d0ed"} */
+[0m01:48:25.278452 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.668 seconds
+[0m01:48:25.287234 [debug] [Thread-3 (]: Using snowflake connection "test.retail.unique_stg_retail__country_country_id.ff999fd7c7"
+[0m01:48:25.290651 [debug] [Thread-3 (]: On test.retail.unique_stg_retail__country_country_id.ff999fd7c7: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    country_id as unique_field,
+    count(*) as n_records
+
+from RETAIL.TRANSFORM.stg_retail__country
+where country_id is not null
+group by country_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "retail", "target_name": "dev", "node_id": "test.retail.unique_stg_retail__country_country_id.ff999fd7c7"} */
+[0m01:48:25.285108 [info ] [Thread-2 (]: 2 of 8 PASS not_null_stg_retail__country_country_name .......................... [[32mPASS[0m in 1.87s]
+[0m01:48:25.288908 [debug] [Thread-4 (]: Began executing node test.retail.unique_stg_retail__country_country_name.0e3ba116f7
+[0m01:48:25.297345 [debug] [Thread-2 (]: Finished running node test.retail.not_null_stg_retail__country_country_name.01607e07a7
+[0m01:48:25.302744 [debug] [Thread-4 (]: Writing runtime sql for node "test.retail.unique_stg_retail__country_country_name.0e3ba116f7"
+[0m01:48:25.337236 [debug] [Thread-4 (]: Using snowflake connection "test.retail.unique_stg_retail__country_country_name.0e3ba116f7"
+[0m01:48:25.340522 [debug] [Thread-4 (]: On test.retail.unique_stg_retail__country_country_name.0e3ba116f7: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    country_name as unique_field,
+    count(*) as n_records
+
+from RETAIL.TRANSFORM.stg_retail__country
+where country_name is not null
+group by country_name
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "retail", "target_name": "dev", "node_id": "test.retail.unique_stg_retail__country_country_name.0e3ba116f7"} */
+[0m01:48:25.550806 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.283 seconds
+[0m01:48:25.563376 [info ] [Thread-1 (]: 6 of 8 PASS source_not_null_retail_raw_invoices_InvoiceNo ...................... [[32mPASS[0m in 0.47s]
+[0m01:48:25.570730 [debug] [Thread-1 (]: Finished running node test.retail.source_not_null_retail_raw_invoices_InvoiceNo.865435d0ed
+[0m01:48:25.620795 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.326 seconds
+[0m01:48:25.631403 [info ] [Thread-3 (]: 7 of 8 PASS unique_stg_retail__country_country_id .............................. [[32mPASS[0m in 0.46s]
+[0m01:48:25.638005 [debug] [Thread-3 (]: Finished running node test.retail.unique_stg_retail__country_country_id.ff999fd7c7
+[0m01:48:25.636244 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.291 seconds
+[0m01:48:25.646245 [info ] [Thread-4 (]: 8 of 8 PASS unique_stg_retail__country_country_name ............................ [[32mPASS[0m in 0.42s]
+[0m01:48:25.649921 [debug] [Thread-4 (]: Finished running node test.retail.unique_stg_retail__country_country_name.0e3ba116f7
+[0m01:48:25.656329 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m01:48:25.658191 [debug] [MainThread]: Connection 'test.retail.source_not_null_retail_raw_invoices_InvoiceNo.865435d0ed' was left open.
+[0m01:48:25.660278 [debug] [MainThread]: On test.retail.source_not_null_retail_raw_invoices_InvoiceNo.865435d0ed: Close
+[0m01:48:26.095193 [debug] [MainThread]: Connection 'test.retail.not_null_stg_retail__country_country_name.01607e07a7' was left open.
+[0m01:48:26.097666 [debug] [MainThread]: On test.retail.not_null_stg_retail__country_country_name.01607e07a7: Close
+[0m01:48:26.555669 [debug] [MainThread]: Connection 'test.retail.unique_stg_retail__country_country_name.0e3ba116f7' was left open.
+[0m01:48:26.557405 [debug] [MainThread]: On test.retail.unique_stg_retail__country_country_name.0e3ba116f7: Close
+[0m01:48:27.015125 [debug] [MainThread]: Connection 'test.retail.unique_stg_retail__country_country_id.ff999fd7c7' was left open.
+[0m01:48:27.017128 [debug] [MainThread]: On test.retail.unique_stg_retail__country_country_id.ff999fd7c7: Close
+[0m01:48:27.450105 [info ] [MainThread]: 
+[0m01:48:27.457563 [info ] [MainThread]: Finished running 8 data tests in 0 hours 0 minutes and 6.56 seconds (6.56s).
+[0m01:48:27.471157 [debug] [MainThread]: Command end result
+[0m01:48:27.575236 [debug] [MainThread]: Wrote artifact WritableManifest to /usr/local/airflow/include/dbt/target/manifest.json
+[0m01:48:27.588137 [debug] [MainThread]: Wrote artifact SemanticManifest to /usr/local/airflow/include/dbt/target/semantic_manifest.json
+[0m01:48:27.602498 [debug] [MainThread]: Wrote artifact OsiDocument to /usr/local/airflow/include/dbt/target/osi_document.json
+[0m01:48:27.622565 [debug] [MainThread]: Wrote artifact RunExecutionResult to /usr/local/airflow/include/dbt/target/run_results.json
+[0m01:48:27.624360 [info ] [MainThread]: 
+[0m01:48:27.626665 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m01:48:27.628805 [info ] [MainThread]: 
+[0m01:48:27.630639 [info ] [MainThread]: Done. PASS=8 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=8
+[0m01:48:27.634015 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 15.721999, "process_in_blocks": "2478", "process_kernel_time": 7.132746, "process_mem_max_rss": "310812", "process_out_blocks": "24", "process_user_time": 11.451309}
+[0m01:48:27.636349 [debug] [MainThread]: Command `dbt test` succeeded at 01:48:27.636132 after 15.72 seconds
+[0m01:48:27.638101 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dab7a28ad50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dab7876d180>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dab7876cd60>]}
+[0m01:48:27.639555 [debug] [MainThread]: Flushing usage events
+[0m01:48:27.826512 [debug] [MainThread]: An error was encountered while trying to flush usage events

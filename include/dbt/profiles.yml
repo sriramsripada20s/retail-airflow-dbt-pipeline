@@ -1,0 +1,13 @@
+retail:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: SZYWYMF-CE91608
+      user: AIRFLOW_RETAIL_USER
+      password: "{{ env_var('SNOWFLAKE_RETAIL_PASSWORD') }}"
+      role: AIRFLOW_RETAIL_ROLE
+      database: RETAIL
+      warehouse: RETAIL_WH
+      schema: TRANSFORM
+      threads: 4

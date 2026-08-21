@@ -1,0 +1,27 @@
+version: 2
+
+models:
+  - name: stg_retail__invoices
+    description: One row per invoice line item, cast and renamed from raw_invoices.
+    columns:
+      - name: invoice_no
+        tests:
+          - not_null
+      - name: quantity
+        tests:
+          - not_null
+      - name: unit_price
+        tests:
+          - not_null
+
+  - name: stg_retail__country
+    description: Country reference/lookup table, renamed from raw.
+    columns:
+      - name: country_id
+        tests:
+          - unique
+          - not_null
+      - name: country_name
+        tests:
+          - unique
+          - not_null

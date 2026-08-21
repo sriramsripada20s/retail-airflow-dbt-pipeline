@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: int_retail__invoice_lines
+    description: Priced, filtered invoice line items — valid sales only.
+    columns:
+      - name: line_total
+        tests:
+          - not_null
+      - name: quantity
+        tests:
+          - not_null

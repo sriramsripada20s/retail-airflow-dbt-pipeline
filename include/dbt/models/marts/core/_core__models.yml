@@ -1,0 +1,54 @@
+version: 2
+
+models:
+  - name: dim_customer
+    description: One row per unique (customer_id, country) combination.
+    columns:
+      - name: customer_key
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_product
+    description: One row per unique (stock_code, description, price) combination.
+    columns:
+      - name: product_key
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_datetime
+    description: One row per unique invoice timestamp.
+    columns:
+      - name: datetime_id
+        tests:
+          - unique
+          - not_null
+
+  - name: fct_invoices
+    description: One row per invoice line item, joined to all three dimensions.
+    columns:
+      - name: customer_key
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_customer')
+                field: customer_key
+      - name: product_key
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_product')
+                field: product_key
+      - name: datetime_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_datetime')
+                field: datetime_id
+      - name: total
+        tests:
+          - not_null
